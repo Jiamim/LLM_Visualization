@@ -1,0 +1,779 @@
+[
+  {
+    "id": "gpt-2-xl-1-5b",
+    "file": "gpt-2-xl-1-5b.json",
+    "sha256": "20e3076ef9d9cc5dbf74b220e94b2f55d869731fee9dc593b6625be33f7bc558",
+    "source": "https://huggingface.co/openai-community/gpt2-xl/blob/15ea56dee5df4983c59b2538573817e1667135e2/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "llama-3-8b",
+    "file": "llama-3-8b.json",
+    "sha256": "2430cee764b6530ff8673cf9ba8561e1d5a33152d503cd0de909ff5718261441",
+    "source": "https://huggingface.co/NousResearch/Meta-Llama-3-8B/blob/315b20096dc791d381d514deb5f8bd9c8d6d3061/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "llama-3-2-1b",
+    "file": "llama-3-2-1b.json",
+    "sha256": "dfb67fd8afe73a1c75245824ef9d64a6ba8983025447e3bf76aa1ea57ee46152",
+    "source": "https://huggingface.co/unsloth/Llama-3.2-1B-Instruct/blob/5a8abab4a5d6f164389b1079fb721cfab8d7126c/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "olmo-2-7b",
+    "file": "olmo-2-7b.json",
+    "sha256": "ff8cc8709a229515676797ab6f343a09391041c9a8fbbc78bfec5be4c2e3664e",
+    "source": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct/blob/470b1fba1ae01581f270116362ee4aa1b97f4c84/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "deepseek-v3",
+    "file": "deepseek-v3.json",
+    "sha256": "cbf0b95dc614de208a109bb5fd4e7eed11385e9c68411d2c17db5319443035d9",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3/blob/e815299b0bcbac849fa540c768ef21845365c9eb/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "deepseek-r1",
+    "file": "deepseek-r1.json",
+    "sha256": "79ddea672a62e95d3f0be27be434375538e1988975971cffcf87c96c1de84a65",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "gemma-3-27b",
+    "file": "gemma-3-27b.json",
+    "sha256": "a7d75383e1089a270c376275ab413cb74052d24041677be7344179c2c5ac17f5",
+    "source": "https://huggingface.co/unsloth/gemma-3-27b-it/blob/7a5a3053dbd5d1d58e48159e87b9df2fc545a49a/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "mistral-small-3-1-24b",
+    "file": "mistral-small-3-1-24b.json",
+    "sha256": "ce3ec410cac74da358f786c574b73b6624c50c8bb876bcb628f06500fe07adcc",
+    "source": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503/blob/ba6496e3dce1d0bdc93848804b1d4b9d5f3c57bc/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "llama-4-maverick",
+    "file": "llama-4-maverick.json",
+    "sha256": "cdc4f783d20b7188ce66dd11f9b31d1cd59403c7cd4ee187183d068d85f92ee7",
+    "source": "https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct/blob/86c5ecb6f2fbddf604c60120125fb202e09f2556/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-0-6b",
+    "file": "qwen3-0-6b.json",
+    "sha256": "504a6b58c4271583724e66584b6b7698aea18450209df6b2f7582df0e89cee59",
+    "source": "https://huggingface.co/Qwen/Qwen3-0.6B-Base/blob/da87bfb608c14b7cf20ba1ce41287e8de496c0cd/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-235b-a22b",
+    "file": "qwen3-235b-a22b.json",
+    "sha256": "e1fa82eb28205df04a1813dd4245b829f2580db5896dfcd7c6b604679909878c",
+    "source": "https://huggingface.co/Qwen/Qwen3-235B-A22B/blob/8efa61729e24bd65b1d152b5ab5409052aa80e65/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-30b-a3b",
+    "file": "qwen3-30b-a3b.json",
+    "sha256": "98a4cf452e3d94b7b22d8ddd515a3fe028f76404529460935e26770c4ab2b094",
+    "source": "https://huggingface.co/Qwen/Qwen3-30B-A3B/blob/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-32b",
+    "file": "qwen3-32b.json",
+    "sha256": "855a9d23f97f8771c84280619ae156c8f73c9cd64a5d53a059125b4aecab12d4",
+    "source": "https://huggingface.co/Qwen/Qwen3-32B/blob/9216db5781bf21249d130ec9da846c4624c16137/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-4b",
+    "file": "qwen3-4b.json",
+    "sha256": "d6ee6bfce164a75d822f4e4635e6a5911816dbf4e6cc14f32397b9741741435f",
+    "source": "https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-8b",
+    "file": "qwen3-8b.json",
+    "sha256": "deaa300e5384a480c2cafd0db33cba0da89db8eeeb8ddc2b584b89bd46d52ffb",
+    "source": "https://huggingface.co/Qwen/Qwen3-8B/blob/b968826d9c46dd6066d109eabc6255188de91218/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "smollm3-3b",
+    "file": "smollm3-3b.json",
+    "sha256": "e8336e843aecb733691a043ad4209168e1730158b5e03c2672591cc946036a47",
+    "source": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base/blob/d78a42f79198603e614095753484a04c10c2b940/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "kimi-k2",
+    "file": "kimi-k2.json",
+    "sha256": "17caf15bd0614a4580e066eec2f459f5b0b1372648e355e6d770305b092662ce",
+    "source": "https://huggingface.co/moonshotai/Kimi-K2-Base/blob/ce72df012259dcc55d945e890f815fe7ef69159c/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "glm-4-5-355b",
+    "file": "glm-4-5-355b.json",
+    "sha256": "068ce7ae7a0c3004ae457e9559fdcc7bf3f81a2854204958896c088f24e9bdc0",
+    "source": "https://huggingface.co/zai-org/GLM-4.5/blob/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "gpt-oss-120b",
+    "file": "gpt-oss-120b.json",
+    "sha256": "933aeb666a3fd851133ddd7686414f369bc564c4185fb5704416550879f10566",
+    "source": "https://huggingface.co/openai/gpt-oss-120b/blob/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "gpt-oss-20b",
+    "file": "gpt-oss-20b.json",
+    "sha256": "3a2a26ded679375b7928ddeca59764df7cea83220c1961035f6d6e232659e9ce",
+    "source": "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "gemma-3-270m",
+    "file": "gemma-3-270m.json",
+    "sha256": "7944b2cf8a011545b92c9158afef2cb681b076cace2e78eab350ec604a50ad82",
+    "source": "https://huggingface.co/unsloth/gemma-3-270m/blob/edcf1fe394ee1168e7c5538afd104cfb1f7947e6/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "grok-2-5-270b",
+    "file": "grok-2-5-270b.json",
+    "sha256": "9f367d915f912059241269739df4cae204c4950e3e39274d87aee954a861bfbb",
+    "source": "https://huggingface.co/xai-org/grok-2/blob/daf4395a80ad177386cfe39641b64fc12b1d70ed/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-next-80b-a3b",
+    "file": "qwen3-next-80b-a3b.json",
+    "sha256": "2d483c7cabad7c8704478ed4038fa7e7b2eff840bc00a118eccbe38e2b488303",
+    "source": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "minimax-m2-230b",
+    "file": "minimax-m2-230b.json",
+    "sha256": "03d0b726553f72ee799f30f52f77b9292b873714abda76ee7e2683953373db87",
+    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/757303d492a50514c312788b5247a4f696a4c6a3/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "kimi-linear-48b-a3b",
+    "file": "kimi-linear-48b-a3b.json",
+    "sha256": "732c453928a14df15ad7b7bf8c626a02236d10eee80ce63a36aa05df73bc17eb",
+    "source": "https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Base/blob/3b171c17bfc4ee348599b6781a2ca8715c21c8dc/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "olmo-3-32b",
+    "file": "olmo-3-32b.json",
+    "sha256": "d47a120cb2669cd46482d5c2da9488903b67759ca167cd85c1127b2e05755f95",
+    "source": "https://huggingface.co/allenai/Olmo-3-32B-Think/blob/f2edda15216e738ef2bb73771e11890e152b2112/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "olmo-3-7b",
+    "file": "olmo-3-7b.json",
+    "sha256": "277d7ea5c6159d4c2d6986a8a23757d1ef06acaa7abc2c40e0513446f7db0f85",
+    "source": "https://huggingface.co/allenai/Olmo-3-1025-7B/blob/a81bae42db3975be1671e27b9c9a56da1a9f980f/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "deepseek-v3-2",
+    "file": "deepseek-v3-2.json",
+    "sha256": "c7fa8b191e9936d8e6a57d864baab82b792fae16a116416cdd3a75ba76bc5af1",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "mistral-large-3",
+    "file": "mistral-large-3.json",
+    "sha256": "c142d4eb0664efe71df035bfa8cc1342438adef2352096c847790ec5cafd644c",
+    "source": "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512/blob/383ffea2c7d60dfd44ca960e8e691709d4fdb9cd/params.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "nemotron-3-nano-30b-a3b",
+    "file": "nemotron-3-nano-30b-a3b.json",
+    "sha256": "dd9fa380ac107b0477db5a26108db9febe6378e7bb3966a107944853ec4f76f8",
+    "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "xiaomi-mimo-v2-flash-309b",
+    "file": "xiaomi-mimo-v2-flash-309b.json",
+    "sha256": "3f04b3a6c7edc7062e2501dd83a7726c73a1a0383494c7dd4a8a9ab6ca046d79",
+    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash/blob/1afd314a2406c282e0956375c34a676501c78649/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "glm-4-7-355b",
+    "file": "glm-4-7-355b.json",
+    "sha256": "7d4fb109d1f6f533724893edfd70c09662c0af3e51bca2d30c91f7cde61c141b",
+    "source": "https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "arcee-ai-trinity-large-400b",
+    "file": "arcee-ai-trinity-large-400b.json",
+    "sha256": "904d0a12434f25f60f930798658c1c7672851679eace8b8266cb37b840715da7",
+    "source": "https://huggingface.co/arcee-ai/Trinity-Large-Base/blob/b2a665b40e5d67b05fb164205cf63155f7958e2a/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "glm-5-744b",
+    "file": "glm-5-744b.json",
+    "sha256": "308d3ceebe7bd9c2246d20550d5b793098dd03838d1e504f8236063ae152bcae",
+    "source": "https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "nemotron-3-super-120b-a12b",
+    "file": "nemotron-3-super-120b-a12b.json",
+    "sha256": "a043939d26098c369ef37a336cb782cbe2278b45a1a522835b85f2691e5a47ff",
+    "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "gemma-4-31b",
+    "file": "gemma-4-31b.json",
+    "sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1",
+    "source": "https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "gemma-4-26b-a4b",
+    "file": "gemma-4-26b-a4b.json",
+    "sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3",
+    "source": "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "gemma-4-12b",
+    "file": "gemma-4-12b.json",
+    "sha256": "478c46e8d2c52d5c2d85bf67e3b3e8c90e7c9d91086cee27e3c267907e936bd9",
+    "source": "https://huggingface.co/google/gemma-4-12B-it/blob/707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "llama-3-2-3b",
+    "file": "llama-3-2-3b.json",
+    "sha256": "eadff796b79b82cefa0537004668d70a1dd099fd4986b91ef88398ed91b26311",
+    "source": "https://huggingface.co/unsloth/Llama-3.2-3B-Instruct/blob/006f5dcd1393c3add266de40994ba96225e9689d/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-coder-flash-30b-a3b",
+    "file": "qwen3-coder-flash-30b-a3b.json",
+    "sha256": "575369fd2eeedda9c7b5f7bedc5e72efda4b8acbed265feb6e18ad1ecd76ed96",
+    "source": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "kimi-k2-5",
+    "file": "kimi-k2-5.json",
+    "sha256": "b631bc56457728270d018ff7b31778f29d9426f5453c641c6b3b3332f3526461",
+    "source": "https://huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "step-3-5-flash-196b",
+    "file": "step-3-5-flash-196b.json",
+    "sha256": "3af39cdf3ac1aa3e36e28a6b4f97e46315de475acea988cc306075bb3e6e2fe5",
+    "source": "https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "nanbeige-4-1-3b",
+    "file": "nanbeige-4-1-3b.json",
+    "sha256": "33afb0ed9fc41e2df70b3883faf17a404e9f5f25a9aa2364f39a9d228e02d8b3",
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.1-3B/blob/9c4555c37921c0982af8fffeee1e0a6e6b953c4f/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "minimax-m2-5-230b",
+    "file": "minimax-m2-5-230b.json",
+    "sha256": "3372a31ecbdba614b309cfa5b3dfec33ceea3c580cb9612ff35345d92ced8618",
+    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5/blob/f710177d938eff80b684d42c5aa84b382612f21f/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "tiny-aya-3-35b",
+    "file": "tiny-aya-3-35b.json",
+    "sha256": "cfe73fa26c8c2a9ef62f45f02ee726b586c038036c1b6548ff2725515b64b214",
+    "source": "https://huggingface.co/DevQuasar/CohereLabs.tiny-aya-base-GGUF/blob/7c8c35ade9cbdba2ddbfe9509583d34af36a048d/CohereLabs.tiny-aya-base.Q2_K.gguf",
+    "derived_or_compacted": true
+  },
+  {
+    "id": "ling-2-5-1t",
+    "file": "ling-2-5-1t.json",
+    "sha256": "dd95567658de4f4c82ea53a93b3b073e0a3bc3dfc4e58987e78e933adff57005",
+    "source": "https://huggingface.co/inclusionAI/Ling-2.5-1T/blob/9c9d569b9183743eadee7f5ff13c15526fd0c751/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-5-397b",
+    "file": "qwen3-5-397b.json",
+    "sha256": "49ad9e6c76f2484746e44352672d9e2067f235ff5b0ff9336182c98828c73eea",
+    "source": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "sarvam-30b",
+    "file": "sarvam-30b.json",
+    "sha256": "db5a70c723fc5bd1ca123ab94d1c0a99d914a20c25eefcf041d137906e2341e9",
+    "source": "https://huggingface.co/sarvamai/sarvam-30b/blob/071ae95e933605ca1104a6b4524a36a98488efa4/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "sarvam-105b",
+    "file": "sarvam-105b.json",
+    "sha256": "f5f015b8f7a7d036cb368ee186348365a7f0f9a3061e0a754976fd88195ce1f9",
+    "source": "https://huggingface.co/sarvamai/sarvam-105b/blob/abe264bdb8fb2244daadaa59ebc2020b3c139e89/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "phi-4",
+    "file": "phi-4.json",
+    "sha256": "07eedad2c48798b6e3728e4a1b75e0e092019a375ba725a40e40c78d13664045",
+    "source": "https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "xlstm-7b",
+    "file": "xlstm-7b.json",
+    "sha256": "e076b6652be700ebedc6a51090eb68b1e19be3db7d6dd62da92b326d9c432f88",
+    "source": "https://huggingface.co/NX-AI/xLSTM-7b/blob/9dc507bd0939cf372a4a4f667335651d8e49dddb/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "glm-4-5-air",
+    "file": "glm-4-5-air.json",
+    "sha256": "0dd4b0d66d5828d85d8e147f6d2c300f1cc4dc794fb0b66a1db8ea757407e22c",
+    "source": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/a24ceef6ce4f3536971efe9b778bdaa1bab18daa/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "ouro-thinking-2-6b",
+    "file": "ouro-thinking-2-6b.json",
+    "sha256": "f50ea2d1764d3ba83591fa4527a141bda154c3252226c2d65cfa6ac143c75e36",
+    "source": "https://huggingface.co/ByteDance/Ouro-2.6B-Thinking/blob/f1edd81e7ac41355db670500ceaf204e0f73af68/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "intellect-3",
+    "file": "intellect-3.json",
+    "sha256": "c2a32116856ff47c71717cb93309fd320120baa43714436a813ddc996d9c8ac4",
+    "source": "https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "longcat-flash-lite-68-5b-a3b",
+    "file": "longcat-flash-lite-68-5b-a3b.json",
+    "sha256": "3bad9543e9a750ba25f059dfeabd1e64a4f827cc9e67e250b9fa707d50f00bec",
+    "source": "https://huggingface.co/meituan-longcat/LongCat-Flash-Lite/blob/b62b68827ead0b7fef3ba98b57f18484acaaec06/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "mistral-small-4",
+    "file": "mistral-small-4.json",
+    "sha256": "113ea221dcf0dc7adc2af52ad84933a5830b663b679a4753a78a98f757de8737",
+    "source": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "nemotron-3-nano-4b",
+    "file": "nemotron-3-nano-4b.json",
+    "sha256": "fde9241f66cd414458df444a80eb535f53aef2b4b240a91f092e651fa6f27219",
+    "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "minimax-m2-7-230b",
+    "file": "minimax-m2-7-230b.json",
+    "sha256": "697c30492781d55ac516011f937b5cdec045710b5b0c9ca39a6ea277785df9aa",
+    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7/blob/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "gemma-4-e2b",
+    "file": "gemma-4-e2b.json",
+    "sha256": "1b28f3d2c3100f6c594754b81107428bd7b822a7f48272ca681dae9d2ec38330",
+    "source": "https://huggingface.co/google/gemma-4-E2B-it/blob/3e22461f65e89153144f8adb70e3b8c2cc9845a7/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "gemma-4-e4b",
+    "file": "gemma-4-e4b.json",
+    "sha256": "33b10c02df3c2e8536cf323d29d53262aaa2f4d11dbe19bc729373fbe90295d4",
+    "source": "https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "deepseek-v4-flash",
+    "file": "deepseek-v4-flash.json",
+    "sha256": "1821e692ca68149e482538400dfb4fc5a0b4dc5da9d6659952c8a4934d5763f4",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/blob/60d8d70770c6776ff598c94bb586a859a38244f1/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "file": "deepseek-v4-pro.json",
+    "sha256": "6fccb45a06b59a94033d0c74ec23bf860e67bc0f4ebc18ea1e33d357fac3336c",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/b5968e9190ef611bbf34a7229255be88a0e937c1/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "laguna-xs-2",
+    "file": "laguna-xs-2.json",
+    "sha256": "ea98d58d56f27126ffaf70df77cac7de1c09af448c09a2734cecf5854fc6d86b",
+    "source": "https://huggingface.co/poolside/Laguna-XS.2/blob/a397bde04501591d0ac3d74a5d9d0a4ec298ffb8/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "zaya1-8b",
+    "file": "zaya1-8b.json",
+    "sha256": "26e322117dd5786726ed75a8d09a729a16eb1ee023b072bd6199e0fd08cb572c",
+    "source": "https://huggingface.co/Zyphra/ZAYA1-8B/blob/67d34da515b30409ee8daa67c3605c4402d03f6f/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "glm-5-1",
+    "file": "glm-5-1.json",
+    "sha256": "726e45e28d1be1636a5834048a4101a2cfe384819ad2ebe08d41f6fe04656526",
+    "source": "https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-6-35b-a3b",
+    "file": "qwen3-6-35b-a3b.json",
+    "sha256": "a535dda50243c13dc2c55921451175d204d4f1f96b9322d4a8f47005a88fcd75",
+    "source": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "kimi-k2-6",
+    "file": "kimi-k2-6.json",
+    "sha256": "03af24788bd7788c65db1fcb8326c5f5c5270aab717c442df67ba9db01041b3d",
+    "source": "https://huggingface.co/moonshotai/Kimi-K2.6/blob/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-6-27b",
+    "file": "qwen3-6-27b.json",
+    "sha256": "1390512aaf85b8e294ea26bbe09ac3a79e1e687b9f6755e370e991c95f90f3a7",
+    "source": "https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "xiaomi-mimo-v2-5-310b",
+    "file": "xiaomi-mimo-v2-5-310b.json",
+    "sha256": "0097e2c681793eeefc17e54573f5be538f3fb5f9c2b2d1060653a8ec1d6c844d",
+    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "xiaomi-mimo-v2-5-pro-1-02t",
+    "file": "xiaomi-mimo-v2-5-pro-1-02t.json",
+    "sha256": "ccea94ab46dc114359322c6db04716c6e58556c56a9c3825e60665d09450f647",
+    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "ling-2-6-1t",
+    "file": "ling-2-6-1t.json",
+    "sha256": "3ad5eb3428673ef7e399f44a66dadf389dfc5369ea9c68fb3661652b960a0710",
+    "source": "https://huggingface.co/inclusionAI/Ling-2.6-1T/blob/653026b0ba07b69ff81e03ef2e44eddd8b493cf5/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "tencent-hy3-preview-295b-a21b",
+    "file": "tencent-hy3-preview-295b-a21b.json",
+    "sha256": "663036ceca3d8a178cd772739566c262caffdecebaed6c1d76b464d729bb2951",
+    "source": "https://huggingface.co/tencent/Hy3-preview/blob/549c2b3a0fd5b9a6c6059a9935bf0d59ab69d75a/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "granite-4-1-30b",
+    "file": "granite-4-1-30b.json",
+    "sha256": "384f1935366f0b0f9c3b4296ef7cd64a08288e15cfe16c40d13101a98ab713f4",
+    "source": "https://huggingface.co/ibm-granite/granite-4.1-30b/blob/4fae6278f7132abf5e971f9de49ebbad09c54cce/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "command-a-218b-a25b",
+    "file": "command-a-218b-a25b.json",
+    "sha256": "732f1fc1aaaceabdb0f82c6a0dd3b853d5edeb5671fb4d38996efc7eb3ea62d9",
+    "source": "https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4/blob/ebd2d72c0f9a84389c6b057136d38c435aea2700/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "lfm2-5-1-2b",
+    "file": "lfm2-5-1-2b.json",
+    "sha256": "15d6157fb6df3f8272e2fe90e18f57727ccf02a125c94469198b0f3281510185",
+    "source": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "lfm2-5-350m",
+    "file": "lfm2-5-350m.json",
+    "sha256": "720b43d6ddc2ed25be23eed355aefcf342434a176dedad23dbe0a5e3ac24bbb8",
+    "source": "https://huggingface.co/LiquidAI/LFM2.5-350M/blob/9e6c6ccf47cd318696e137d381a7ded8fe4df09f/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "lfm2-5-8b-a1b",
+    "file": "lfm2-5-8b-a1b.json",
+    "sha256": "9c0255c2d5c744c99b760a12edca2572935348dae340e79e2e6625af975d2d68",
+    "source": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "jetbrains-mellum2-thinking-12b-a2-5b",
+    "file": "jetbrains-mellum2-thinking-12b-a2-5b.json",
+    "sha256": "f43d018246094dee6dca455b3072766b6acbefd1ac8e7fe664df34710606a541",
+    "source": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "nemotron-3-ultra-550b-a55b",
+    "file": "nemotron-3-ultra-550b-a55b.json",
+    "sha256": "bd85a312cc895cea77e0f406d56300fab18a62f7ad91a7f8235d65c873fb24cf",
+    "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4/blob/02462641f13d3af838b904f48195b9bb8a1e4ebc/config.json",
+    "derived_or_compacted": true
+  },
+  {
+    "id": "north-mini-code-30b-a3b",
+    "file": "north-mini-code-30b-a3b.json",
+    "sha256": "0c987a88193e90c89a88a9dbeaba6844f5f24d00b728683338e2ace1476509a7",
+    "source": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0/blob/d11e61a842617a22dc328552fa5bb86231ee4f37/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "kimi-k2-7-code",
+    "file": "kimi-k2-7-code.json",
+    "sha256": "6b1c800863053375ec077c95bfc67e2b3e984bf8baf0f99189f5e90258794fea",
+    "source": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "minimax-m3-428b",
+    "file": "minimax-m3-428b.json",
+    "sha256": "c9c97ce1e4eece60012d5a10ea87717458bfb1f19c2c7a615a3dbff83d090c6b",
+    "source": "https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/f0e1c1e04d40177e4673a22097036854f536e9c0/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "vibethinker-3b",
+    "file": "vibethinker-3b.json",
+    "sha256": "753ce309c0be4df3f3786239f1f66d135a08e98236f0e2bfa744b65f3246900f",
+    "source": "https://huggingface.co/WeiboAI/VibeThinker-3B/blob/77bd2cced09193c8b9a59a32bd8577bbd1f3e01c/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "glm-5-2",
+    "file": "glm-5-2.json",
+    "sha256": "185f93ee6d12548e16a847e279dc0c3c90b1524c970b0866b42fb545747d859a",
+    "source": "https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "laguna-xs-2-1",
+    "file": "laguna-xs-2-1.json",
+    "sha256": "de84031daa00903361001b0ed684aba7e574952f51de84fdc3da6d6239b451ea",
+    "source": "https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "soofi-s-30b-a3b",
+    "file": "soofi-s-30b-a3b.json",
+    "sha256": "b692889befc29248d21b7a7607e43525e1e269fa0c8ed18f0be069165566989f",
+    "source": "https://huggingface.co/Soofi-Project/Soofi-S-Base/blob/main/README.md",
+    "derived_or_compacted": true
+  },
+  {
+    "id": "inkling",
+    "file": "inkling.json",
+    "sha256": "58720f145bcecef9a7ab2b419ab346e7c634af8d2f3e7362e900d00f789ea46c",
+    "source": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "btl-3-27b",
+    "file": "btl-3-27b.json",
+    "sha256": "c7e25246a728ed0ca4f8e20935149149696135932e537cd241be32fe6fb4a5d8",
+    "source": "https://huggingface.co/badtheorylabs/BTL-3/blob/f76b519995d69090b754f22b7f45d0d406076c42/adapter_config.json",
+    "derived_or_compacted": true
+  },
+  {
+    "id": "antares-1b",
+    "file": "antares-1b.json",
+    "sha256": "18c3590d2cd1f725ae752fb41afec5f143a6ade8b235deaab2c2929316848298",
+    "source": "https://huggingface.co/dpoled/antares-1b-mlx-8bit/blob/0c20d04e51ff4a54bb43c57efc30a115f9066f85/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "laguna-s-2-1",
+    "file": "laguna-s-2-1.json",
+    "sha256": "6c05bf7f00944ba076534c5ede09b29844d9d450acf40a980c1e571955d3022a",
+    "source": "https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "motif-3-beta",
+    "file": "motif-3-beta.json",
+    "sha256": "cd0ce1c404f97472ae8a9e00512d1e1f3f303907d0b778c16766860359aa8bf4",
+    "source": "https://huggingface.co/Motif-Technologies/Motif-3-Beta/blob/ad36ceadd3cadb3629e5d91da4ee85c1650f37ac/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "nanbeige-4-2-3b",
+    "file": "nanbeige-4-2-3b.json",
+    "sha256": "f6cb15b22847664f3a6049dc4b58fdd10f1650d112ac99a1da3d051f17c2ca19",
+    "source": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B/blob/b82e54bd609793562a75cbf9337970a93369eab5/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "solar-open-2",
+    "file": "solar-open-2.json",
+    "sha256": "aef934520e166fd28dc5e6a975b7fc7103666cad33cbe0defc84bab17d2485b0",
+    "source": "https://huggingface.co/upstage/Solar-Open2-250B/blob/9190fbe63a2ad8e17fc766ccceb36de7c66f004b/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "kimi-k3",
+    "file": "kimi-k3.json",
+    "sha256": "9728baf9c770935feddeca32b80bba19b9a571bdfb3b5c7b6cd5a845f121f4ad",
+    "source": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "ling-3-0-flash",
+    "file": "ling-3-0-flash.json",
+    "sha256": "6c1bd3c25e8b2db7ed954bd08291fa706ab2596a16b2cbab397ca75d44979c3b",
+    "source": "https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/fcc60a52b34c69c6271d0ac8a8cb0815020b6a43/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "muse-glimmer-30b",
+    "file": "muse-glimmer-30b.json",
+    "sha256": "5a9df2d8a385b3d361ab6ae68d73586f4e775033933bd0cd863fb7f3820e6a14",
+    "source": "https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "nemotron-3-5-lightning-30b-a3b",
+    "file": "nemotron-3-5-lightning-30b-a3b.json",
+    "sha256": "bf36219145a9155a1cd0f1d1ae002a151f76d1c6bc324de641b88a56eabd99f7",
+    "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4/blob/bee7596271d1495f6992ae224aefde4410e816b8/config.json",
+    "derived_or_compacted": true
+  },
+  {
+    "id": "qwen3-8-27b",
+    "file": "qwen3-8-27b.json",
+    "sha256": "7718cd6bf3d6521d5550966d4ab8484fc81a01347d74b7e52163070f35ca7f35",
+    "source": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "ornith-1-5-35b-a3b",
+    "file": "ornith-1-5-35b-a3b.json",
+    "sha256": "af198ccbe6c17dd973da98bbf6c92ce1c3ec7261c2e2fbc4c4f5150018418ea8",
+    "source": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "glm-5-3-flash",
+    "file": "glm-5-3-flash.json",
+    "sha256": "bb8f01c42cb92a52ca72e65afb4d5bd8d11aef083cd210e8de25dfb904f23e9f",
+    "source": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "qwen3-8-flash-next-125b-a6b",
+    "file": "qwen3-8-flash-next-125b-a6b.json",
+    "sha256": "c77cfd62621660b25e4c811bf44bf2ad4f63af98f23a874952a99e4e85f189f2",
+    "source": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "tencent-hy4-preview-770b-a49b",
+    "file": "tencent-hy4-preview-770b-a49b.json",
+    "sha256": "a2c0dc5ec7c5b85b83c5514d1f923dcaeb3510ac0aa0816c3c26a2418ee80f8d",
+    "source": "https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "deepseek-v4-1-flash",
+    "file": "deepseek-v4-1-flash.json",
+    "sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+    "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/314113f8a7dadb388215396ba5fbee2c610a04d6/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "step-5-preview-600b",
+    "file": "step-5-preview-600b.json",
+    "sha256": "e535c5c9e6385e5c39d55daf346fc0b42dd93496bf5e540ea442168b2524bb63",
+    "source": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "xiaomi-mimo-v2-6-flash-rl-309b",
+    "file": "xiaomi-mimo-v2-6-flash-rl-309b.json",
+    "sha256": "61bea4a0f7a0dd8969f8cae528761e26b697dd12ff63e98804c3f0945492e621",
+    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/dcd3fd83fb181622fbc606fbb1709901982a62c2/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "xiaomi-mimo-v2-6-pro-rl-1-02t",
+    "file": "xiaomi-mimo-v2-6-pro-rl-1-02t.json",
+    "sha256": "a9dc00e2a0c2c172efd198f42e81e41c95472021b57c65366c06587d44038b62",
+    "source": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/b61f21852680ee02a29e946e18cf8697f4844061/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "ember-1",
+    "file": "ember-1.json",
+    "sha256": "9728baf9c770935feddeca32b80bba19b9a571bdfb3b5c7b6cd5a845f121f4ad",
+    "source": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "naive-n0-5-flash-309b",
+    "file": "naive-n0-5-flash-309b.json",
+    "sha256": "cd73b4545be676224c297e0e5192c64717103ae127b12d97b4b891387b4e0e27",
+    "source": "https://huggingface.co/NaiveAI/Naive-N0.5-Flash/blob/9c9a11e8d2a6b8507d48b533345ef591cf9a6494/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "kolibri-1-78b",
+    "file": "kolibri-1-78b.json",
+    "sha256": "7e6919815d37a785b7f65a3306d145cc7853eb77aa54422b1ec5184a4ded8497",
+    "source": "https://huggingface.co/Aleph-Alpha/Kolibri-1/blob/452723312f300bf9542cd425f9d39bf832c2af40/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "muse-spark-open-816b-a42b",
+    "file": "muse-spark-open-816b-a42b.json",
+    "sha256": "4e91fd887cd1f61e59d717f1ec5dea5fa82f4c01f3dca8d7d96b5b29b7b25ea3",
+    "source": "https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B/blob/49cade7b0c6ed297f0434229ac67eea5f9ae1220/config.json",
+    "derived_or_compacted": false
+  },
+  {
+    "id": "nemotron-3-5-super-vl-120b-a12b",
+    "file": "nemotron-3-5-super-vl-120b-a12b.json",
+    "sha256": "186d1ebb04c715e2695ff8e2bb165fdbea2b6771ff85397af70a9c0b5af9d8ea",
+    "source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/blob/59b8721646c38111a242da18218859fb2b454322/config.json",
+    "derived_or_compacted": true
+  }
+]

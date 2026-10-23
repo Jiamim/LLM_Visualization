@@ -1,0 +1,36 @@
+# Installed dependencies and build output
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Test output and local caches
+test-results/
+playwright-report/
+playwright/.cache/
+coverage/
+.nyc_output/
+.vite/
+.vite-temp/
+.cache/
+.parcel-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local logs, environment configuration and deployment state
+*.log
+*.pid
+.env*
+!.env.example
+.vercel/
+
+# Operating-system and editor temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

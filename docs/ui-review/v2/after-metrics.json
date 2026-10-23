@@ -1,0 +1,140 @@
+[
+  {
+    "width": 1440,
+    "canvas": {
+      "x": 248,
+      "y": 305.390625,
+      "width": 872,
+      "height": 562.609375
+    },
+    "surface": {
+      "x": 248,
+      "y": 343.390625,
+      "width": 872,
+      "height": 524.609375
+    },
+    "toolbar": {
+      "x": 248,
+      "y": 248.390625,
+      "width": 872,
+      "height": 57
+    },
+    "overflow": false,
+    "toolbarOverflow": false
+  },
+  {
+    "width": 1280,
+    "canvas": {
+      "x": 225,
+      "y": 302.390625,
+      "width": 760,
+      "height": 405.609375
+    },
+    "surface": {
+      "x": 225,
+      "y": 340.390625,
+      "width": 760,
+      "height": 367.609375
+    },
+    "toolbar": {
+      "x": 225,
+      "y": 245.390625,
+      "width": 760,
+      "height": 57
+    },
+    "overflow": false,
+    "toolbarOverflow": false
+  },
+  {
+    "width": 1024,
+    "canvas": {
+      "x": 235,
+      "y": 302.390625,
+      "width": 789,
+      "height": 373.609375
+    },
+    "surface": {
+      "x": 235,
+      "y": 340.390625,
+      "width": 789,
+      "height": 335.609375
+    },
+    "toolbar": {
+      "x": 235,
+      "y": 245.390625,
+      "width": 789,
+      "height": 57
+    },
+    "overflow": false,
+    "toolbarOverflow": false
+  },
+  {
+    "width": 768,
+    "canvas": {
+      "x": 215,
+      "y": 302.390625,
+      "width": 553,
+      "height": 629.609375
+    },
+    "surface": {
+      "x": 215,
+      "y": 340.390625,
+      "width": 553,
+      "height": 591.609375
+    },
+    "toolbar": {
+      "x": 215,
+      "y": 245.390625,
+      "width": 553,
+      "height": 57
+    },
+    "overflow": false,
+    "toolbarOverflow": false
+  },
+  {
+    "width": 390,
+    "canvas": {
+      "x": 0,
+      "y": 270.84375,
+      "width": 390,
+      "height": 487.15625
+    },
+    "surface": {
+      "x": 0,
+      "y": 306.84375,
+      "width": 390,
+      "height": 451.15625
+    },
+    "toolbar": {
+      "x": 0,
+      "y": 216.84375,
+      "width": 390,
+      "height": 54
+    },
+    "overflow": false,
+    "toolbarOverflow": false
+  },
+  {
+    "width": 360,
+    "canvas": {
+      "x": 0,
+      "y": 270.84375,
+      "width": 360,
+      "height": 383.15625
+    },
+    "surface": {
+      "x": 0,
+      "y": 306.84375,
+      "width": 360,
+      "height": 347.15625
+    },
+    "toolbar": {
+      "x": 0,
+      "y": 216.84375,
+      "width": 360,
+      "height": 54
+    },
+    "overflow": false,
+    "toolbarOverflow": false
+  }
+]

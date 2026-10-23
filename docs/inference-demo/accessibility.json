@@ -1,0 +1,22 @@
+[
+  {
+    "name": "ready",
+    "violations": []
+  },
+  {
+    "name": "paused",
+    "violations": []
+  },
+  {
+    "name": "settings",
+    "violations": []
+  },
+  {
+    "name": "mobile",
+    "violations": []
+  },
+  {
+    "name": "2d",
+    "violations": []
+  }
+]

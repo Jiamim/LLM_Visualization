@@ -1,0 +1,82 @@
+[
+  {
+    "width": 1440,
+    "canvas": {
+      "x": 248,
+      "y": 293.046875,
+      "width": 872,
+      "height": 574.953125
+    },
+    "toolbar": {
+      "x": 248,
+      "y": 239.046875,
+      "width": 872,
+      "height": 54
+    },
+    "overflow": false
+  },
+  {
+    "width": 1280,
+    "canvas": {
+      "x": 225,
+      "y": 283,
+      "width": 760,
+      "height": 425
+    },
+    "toolbar": {
+      "x": 225,
+      "y": 231,
+      "width": 760,
+      "height": 52
+    },
+    "overflow": false
+  },
+  {
+    "width": 1024,
+    "canvas": {
+      "x": 235,
+      "y": 296.046875,
+      "width": 789,
+      "height": 379.953125
+    },
+    "toolbar": {
+      "x": 235,
+      "y": 242.046875,
+      "width": 789,
+      "height": 54
+    },
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "canvas": {
+      "x": 0,
+      "y": 297.140625,
+      "width": 390,
+      "height": 460.859375
+    },
+    "toolbar": {
+      "x": 0,
+      "y": 214.140625,
+      "width": 390,
+      "height": 83
+    },
+    "overflow": false
+  },
+  {
+    "width": 360,
+    "canvas": {
+      "x": 0,
+      "y": 297.140625,
+      "width": 360,
+      "height": 356.859375
+    },
+    "toolbar": {
+      "x": 0,
+      "y": 214.140625,
+      "width": 360,
+      "height": 83
+    },
+    "overflow": false
+  }
+]

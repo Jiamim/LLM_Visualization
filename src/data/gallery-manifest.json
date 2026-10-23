@@ -1,0 +1,2884 @@
+{
+  "snapshotDate": "2026-10-17",
+  "source": "https://sebastianraschka.com/llm-architecture-gallery/",
+  "count": 111,
+  "models": [
+    {
+      "id": "gpt-2-xl-1-5b",
+      "name": "GPT-2 XL (1.5B)",
+      "company": "OpenAI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-gpt-2-xl-1-5b",
+      "configUrls": [
+        "https://huggingface.co/openai-community/gpt2-xl/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf"
+        }
+      ],
+      "attention": "MHA with learned absolute positional embeddings",
+      "decoder": "Dense",
+      "layerMix": "48 MHA",
+      "context": "1,024",
+      "scale": "1.5B parameters",
+      "repo": "openai-community/gpt2-xl",
+      "revision": "15ea56dee5df4983c59b2538573817e1667135e2",
+      "configUrl": "https://huggingface.co/openai-community/gpt2-xl/blob/15ea56dee5df4983c59b2538573817e1667135e2/config.json",
+      "configPath": "gpt-2-xl-1-5b.json",
+      "modelType": "gpt2",
+      "error": null
+    },
+    {
+      "id": "llama-3-8b",
+      "name": "Llama 3 (8B)",
+      "company": "Meta",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-llama-3-8b",
+      "configUrls": [
+        "https://huggingface.co/meta-llama/Meta-Llama-3-8B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/07_gpt_to_llama"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2407.21783"
+        }
+      ],
+      "attention": "GQA with RoPE",
+      "decoder": "Dense",
+      "layerMix": "32 GQA",
+      "context": "8,192",
+      "scale": "8B parameters",
+      "repo": "NousResearch/Meta-Llama-3-8B",
+      "error": null,
+      "revision": "315b20096dc791d381d514deb5f8bd9c8d6d3061",
+      "configUrl": "https://huggingface.co/NousResearch/Meta-Llama-3-8B/blob/315b20096dc791d381d514deb5f8bd9c8d6d3061/config.json",
+      "configPath": "llama-3-8b.json",
+      "modelType": "llama",
+      "sourceNote": "public mirror of Meta Llama 3"
+    },
+    {
+      "id": "llama-3-2-1b",
+      "name": "Llama 3.2 (1B)",
+      "company": "Meta",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-llama-3-2-1b",
+      "configUrls": [],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/07_gpt_to_llama"
+        }
+      ],
+      "attention": "GQA",
+      "decoder": "Dense",
+      "layerMix": "16 GQA",
+      "context": "128,000",
+      "scale": "1B parameters",
+      "repo": "unsloth/Llama-3.2-1B-Instruct",
+      "error": null,
+      "revision": "5a8abab4a5d6f164389b1079fb721cfab8d7126c",
+      "configUrl": "https://huggingface.co/unsloth/Llama-3.2-1B-Instruct/blob/5a8abab4a5d6f164389b1079fb721cfab8d7126c/config.json",
+      "configPath": "llama-3-2-1b.json",
+      "modelType": "llama",
+      "sourceNote": "public mirror of Llama 3.2 1B"
+    },
+    {
+      "id": "olmo-2-7b",
+      "name": "OLMo 2 (7B)",
+      "company": "Ai2",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-olmo-2-7b",
+      "configUrls": [
+        "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2501.00656"
+        }
+      ],
+      "attention": "MHA with QK-Norm",
+      "decoder": "Dense",
+      "layerMix": "32 MHA",
+      "context": "4,096",
+      "scale": "7B parameters",
+      "repo": "allenai/OLMo-2-1124-7B-Instruct",
+      "revision": "470b1fba1ae01581f270116362ee4aa1b97f4c84",
+      "configUrl": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct/blob/470b1fba1ae01581f270116362ee4aa1b97f4c84/config.json",
+      "configPath": "olmo-2-7b.json",
+      "modelType": "olmo2",
+      "error": null
+    },
+    {
+      "id": "deepseek-v3",
+      "name": "DeepSeek V3 (671B)",
+      "company": "DeepSeek",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-deepseek-v3",
+      "configUrls": [
+        "https://huggingface.co/deepseek-ai/DeepSeek-V3/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2412.19437"
+        }
+      ],
+      "attention": "MLA",
+      "decoder": "Sparse MoE",
+      "layerMix": "61 MLA",
+      "context": "128,000",
+      "scale": "671B total, 37B active (5.5% active)",
+      "repo": "deepseek-ai/DeepSeek-V3",
+      "revision": "e815299b0bcbac849fa540c768ef21845365c9eb",
+      "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3/blob/e815299b0bcbac849fa540c768ef21845365c9eb/config.json",
+      "configPath": "deepseek-v3.json",
+      "modelType": "deepseek_v3",
+      "error": null
+    },
+    {
+      "id": "deepseek-r1",
+      "name": "DeepSeek R1 (671B)",
+      "company": "DeepSeek",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-deepseek-r1",
+      "configUrls": [
+        "https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2501.12948"
+        }
+      ],
+      "attention": "MLA",
+      "decoder": "Sparse MoE",
+      "layerMix": "61 MLA",
+      "context": "128,000",
+      "scale": "671B total, 37B active (5.5% active)",
+      "repo": "deepseek-ai/DeepSeek-R1",
+      "revision": "56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad",
+      "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/config.json",
+      "configPath": "deepseek-r1.json",
+      "modelType": "deepseek_v3",
+      "error": null
+    },
+    {
+      "id": "gemma-3-27b",
+      "name": "Gemma 3 (27B)",
+      "company": "Google",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-gemma-3-27b",
+      "configUrls": [
+        "https://huggingface.co/google/gemma-3-27b-it/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/12_gemma3"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2503.19786"
+        }
+      ],
+      "attention": "GQA with QK-Norm and 5:1 sliding-window/global attention",
+      "decoder": "Dense",
+      "layerMix": "52 sliding-window + 10 global",
+      "context": "128,000",
+      "scale": "27B parameters",
+      "repo": "unsloth/gemma-3-27b-it",
+      "error": null,
+      "revision": "7a5a3053dbd5d1d58e48159e87b9df2fc545a49a",
+      "configUrl": "https://huggingface.co/unsloth/gemma-3-27b-it/blob/7a5a3053dbd5d1d58e48159e87b9df2fc545a49a/config.json",
+      "configPath": "gemma-3-27b.json",
+      "modelType": "gemma3",
+      "sourceNote": "public mirror of Gemma 3"
+    },
+    {
+      "id": "mistral-small-3-1-24b",
+      "name": "Mistral Small 3.1 (24B)",
+      "company": "Mistral AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-mistral-small-3-1-24b",
+      "configUrls": [
+        "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://mistral.ai/news/mistral-small-3-1"
+        }
+      ],
+      "attention": "Standard GQA",
+      "decoder": "Dense",
+      "layerMix": "40 GQA",
+      "context": "128,000",
+      "scale": "24B parameters",
+      "repo": "mistralai/Mistral-Small-3.1-24B-Base-2503",
+      "revision": "ba6496e3dce1d0bdc93848804b1d4b9d5f3c57bc",
+      "configUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503/blob/ba6496e3dce1d0bdc93848804b1d4b9d5f3c57bc/config.json",
+      "configPath": "mistral-small-3-1-24b.json",
+      "modelType": "mistral3",
+      "error": null
+    },
+    {
+      "id": "llama-4-maverick",
+      "name": "Llama 4 Maverick (400B)",
+      "company": "Meta",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-llama-4-maverick",
+      "configUrls": [
+        "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+        }
+      ],
+      "attention": "GQA",
+      "decoder": "Sparse MoE",
+      "layerMix": "36 chunked + 12 full GQA",
+      "context": "1,000,000",
+      "scale": "400B total, 17B active (4.3% active)",
+      "repo": "unsloth/Llama-4-Maverick-17B-128E-Instruct",
+      "error": null,
+      "revision": "86c5ecb6f2fbddf604c60120125fb202e09f2556",
+      "configUrl": "https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct/blob/86c5ecb6f2fbddf604c60120125fb202e09f2556/config.json",
+      "configPath": "llama-4-maverick.json",
+      "modelType": "llama4",
+      "sourceNote": "public mirror of Llama 4"
+    },
+    {
+      "id": "qwen3-0-6b",
+      "name": "Qwen3 (0.6B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-0-6b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3-0.6B-Base/blob/main/config.json"
+      ],
+      "primaryLinks": [],
+      "attention": "GQA",
+      "decoder": "Dense",
+      "layerMix": "28 GQA",
+      "context": "32,768",
+      "scale": "0.6B parameters",
+      "repo": "Qwen/Qwen3-0.6B-Base",
+      "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-Base/blob/da87bfb608c14b7cf20ba1ce41287e8de496c0cd/config.json",
+      "configPath": "qwen3-0-6b.json",
+      "modelType": "qwen3",
+      "error": null
+    },
+    {
+      "id": "qwen3-235b-a22b",
+      "name": "Qwen3 (235B-A22B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-235b-a22b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3-235B-A22B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/11_qwen3"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2505.09388"
+        }
+      ],
+      "attention": "GQA with QK-Norm",
+      "decoder": "Sparse MoE",
+      "layerMix": "94 GQA",
+      "context": "128,000",
+      "scale": "235B total, 22B active (9.4% active)",
+      "repo": "Qwen/Qwen3-235B-A22B",
+      "revision": "8efa61729e24bd65b1d152b5ab5409052aa80e65",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B/blob/8efa61729e24bd65b1d152b5ab5409052aa80e65/config.json",
+      "configPath": "qwen3-235b-a22b.json",
+      "modelType": "qwen3_moe",
+      "error": null
+    },
+    {
+      "id": "qwen3-30b-a3b",
+      "name": "Qwen3 (30B-A3B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-30b-a3b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3-30B-A3B/blob/main/config.json"
+      ],
+      "primaryLinks": [],
+      "attention": "GQA",
+      "decoder": "Sparse MoE",
+      "layerMix": "48 GQA",
+      "context": "128,000",
+      "scale": "30B total, 3B active (10% active)",
+      "repo": "Qwen/Qwen3-30B-A3B",
+      "revision": "ad44e777bcd18fa416d9da3bd8f70d33ebb85d39",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B/blob/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/config.json",
+      "configPath": "qwen3-30b-a3b.json",
+      "modelType": "qwen3_moe",
+      "error": null
+    },
+    {
+      "id": "qwen3-32b",
+      "name": "Qwen3 (32B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-32b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3-32B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/11_qwen3"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2505.09388"
+        }
+      ],
+      "attention": "GQA with QK-Norm",
+      "decoder": "Dense",
+      "layerMix": "64 GQA",
+      "context": "128,000",
+      "scale": "32B parameters",
+      "repo": "Qwen/Qwen3-32B",
+      "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3-32B/blob/9216db5781bf21249d130ec9da846c4624c16137/config.json",
+      "configPath": "qwen3-32b.json",
+      "modelType": "qwen3",
+      "error": null
+    },
+    {
+      "id": "qwen3-4b",
+      "name": "Qwen3 (4B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-4b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3-4B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/11_qwen3"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2505.09388"
+        }
+      ],
+      "attention": "GQA with QK-Norm",
+      "decoder": "Dense",
+      "layerMix": "36 GQA",
+      "context": "32,768",
+      "scale": "4B parameters",
+      "repo": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/config.json",
+      "configPath": "qwen3-4b.json",
+      "modelType": "qwen3",
+      "error": null
+    },
+    {
+      "id": "qwen3-8b",
+      "name": "Qwen3 (8B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-8b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3-8B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/11_qwen3"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2505.09388"
+        }
+      ],
+      "attention": "GQA with QK-Norm",
+      "decoder": "Dense",
+      "layerMix": "36 GQA",
+      "context": "128,000",
+      "scale": "8B parameters",
+      "repo": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3-8B/blob/b968826d9c46dd6066d109eabc6255188de91218/config.json",
+      "configPath": "qwen3-8b.json",
+      "modelType": "qwen3",
+      "error": null
+    },
+    {
+      "id": "smollm3-3b",
+      "name": "SmolLM3 (3B)",
+      "company": "Hugging Face",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-smollm3-3b",
+      "configUrls": [
+        "https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/blog/smollm3"
+        }
+      ],
+      "attention": "GQA with periodic NoPE layers",
+      "decoder": "Dense",
+      "layerMix": "36 GQA",
+      "context": "131,072",
+      "scale": "3B parameters",
+      "repo": "HuggingFaceTB/SmolLM3-3B-Base",
+      "revision": "d78a42f79198603e614095753484a04c10c2b940",
+      "configUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base/blob/d78a42f79198603e614095753484a04c10c2b940/config.json",
+      "configPath": "smollm3-3b.json",
+      "modelType": "smollm3",
+      "error": null
+    },
+    {
+      "id": "kimi-k2",
+      "name": "Kimi K2 (1T)",
+      "company": "Moonshot AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-kimi-k2",
+      "configUrls": [
+        "https://huggingface.co/moonshotai/Kimi-K2-Base/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2507.20534"
+        }
+      ],
+      "attention": "MLA",
+      "decoder": "Sparse MoE",
+      "layerMix": "61 MLA",
+      "context": "128,000",
+      "scale": "1T total, 32B active (3.2% active)",
+      "repo": "moonshotai/Kimi-K2-Base",
+      "revision": "ce72df012259dcc55d945e890f815fe7ef69159c",
+      "configUrl": "https://huggingface.co/moonshotai/Kimi-K2-Base/blob/ce72df012259dcc55d945e890f815fe7ef69159c/config.json",
+      "configPath": "kimi-k2.json",
+      "modelType": "kimi_k2",
+      "error": null
+    },
+    {
+      "id": "glm-4-5-355b",
+      "name": "GLM-4.5 (355B)",
+      "company": "Z.ai",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-glm-4-5-355b",
+      "configUrls": [
+        "https://huggingface.co/zai-org/GLM-4.5/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2508.06471"
+        }
+      ],
+      "attention": "GQA with QK-Norm",
+      "decoder": "Sparse MoE",
+      "layerMix": "92 GQA",
+      "context": "128,000",
+      "scale": "355B total, 32B active (9% active)",
+      "repo": "zai-org/GLM-4.5",
+      "revision": "cbb2c7cfb52fa128a9660cb1a7a78e017899e115",
+      "configUrl": "https://huggingface.co/zai-org/GLM-4.5/blob/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/config.json",
+      "configPath": "glm-4-5-355b.json",
+      "modelType": "glm4_moe",
+      "error": null
+    },
+    {
+      "id": "gpt-oss-120b",
+      "name": "GPT-OSS (120B)",
+      "company": "OpenAI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-gpt-oss-120b",
+      "configUrls": [
+        "https://huggingface.co/openai/gpt-oss-120b/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://cdn.openai.com/pdf/419b6906-9da6-406c-a19d-1bb078ac7637/oai_gpt-oss_model_card.pdf"
+        }
+      ],
+      "attention": "GQA with alternating sliding-window and global layers",
+      "decoder": "Sparse MoE",
+      "layerMix": "18 sliding-window + 18 global",
+      "context": "128,000",
+      "scale": "117B total, 5.1B active (4.4% active)",
+      "repo": "openai/gpt-oss-120b",
+      "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "configUrl": "https://huggingface.co/openai/gpt-oss-120b/blob/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/config.json",
+      "configPath": "gpt-oss-120b.json",
+      "modelType": "gpt_oss",
+      "error": null
+    },
+    {
+      "id": "gpt-oss-20b",
+      "name": "GPT-OSS (20B)",
+      "company": "OpenAI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-gpt-oss-20b",
+      "configUrls": [
+        "https://huggingface.co/openai/gpt-oss-20b/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://cdn.openai.com/pdf/419b6906-9da6-406c-a19d-1bb078ac7637/oai_gpt-oss_model_card.pdf"
+        }
+      ],
+      "attention": "GQA with alternating sliding-window and global layers",
+      "decoder": "Sparse MoE",
+      "layerMix": "12 sliding-window + 12 global",
+      "context": "128,000",
+      "scale": "21B total, 3.6B active (17.1% active)",
+      "repo": "openai/gpt-oss-20b",
+      "revision": "6cee5e81ee83917806bbde320786a8fb61efebee",
+      "configUrl": "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/config.json",
+      "configPath": "gpt-oss-20b.json",
+      "modelType": "gpt_oss",
+      "error": null
+    },
+    {
+      "id": "gemma-3-270m",
+      "name": "Gemma 3 (270M)",
+      "company": "Google",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-gemma-3-270m",
+      "configUrls": [
+        "https://huggingface.co/google/gemma-3-270m/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/12_gemma3"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2503.19786"
+        }
+      ],
+      "attention": "Multi-query attention with QK-Norm and 5:1 sliding-window/global attention",
+      "decoder": "Dense",
+      "layerMix": "15 sliding-window + 3 global",
+      "context": "128,000",
+      "scale": "270M parameters",
+      "repo": "unsloth/gemma-3-270m",
+      "error": null,
+      "revision": "edcf1fe394ee1168e7c5538afd104cfb1f7947e6",
+      "configUrl": "https://huggingface.co/unsloth/gemma-3-270m/blob/edcf1fe394ee1168e7c5538afd104cfb1f7947e6/config.json",
+      "configPath": "gemma-3-270m.json",
+      "modelType": "gemma3_text",
+      "sourceNote": "public mirror of Gemma 3"
+    },
+    {
+      "id": "grok-2-5-270b",
+      "name": "Grok 2.5 (270B)",
+      "company": "xAI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-grok-2-5-270b",
+      "configUrls": [
+        "https://huggingface.co/xai-org/grok-2/blob/main/config.json"
+      ],
+      "primaryLinks": [],
+      "attention": "GQA",
+      "decoder": "Sparse MoE",
+      "layerMix": "64 GQA",
+      "context": "131,072",
+      "scale": "270B parameters",
+      "repo": "xai-org/grok-2",
+      "revision": "daf4395a80ad177386cfe39641b64fc12b1d70ed",
+      "configUrl": "https://huggingface.co/xai-org/grok-2/blob/daf4395a80ad177386cfe39641b64fc12b1d70ed/config.json",
+      "configPath": "grok-2-5-270b.json",
+      "modelType": "git",
+      "error": null
+    },
+    {
+      "id": "qwen3-next-80b-a3b",
+      "name": "Qwen3 Next (80B-A3B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-next-80b-a3b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/main/config.json"
+      ],
+      "primaryLinks": [],
+      "attention": "3:1 Gated DeltaNet and Gated Attention",
+      "decoder": "Sparse hybrid",
+      "layerMix": "12 gated attention + 36 DeltaNet",
+      "context": "262,144",
+      "scale": "80B total, 3B active (3.8% active)",
+      "repo": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "revision": "9c7f2fbe84465e40164a94cc16cd30b6999b0cc7",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/config.json",
+      "configPath": "qwen3-next-80b-a3b.json",
+      "modelType": "qwen3_next",
+      "error": null
+    },
+    {
+      "id": "minimax-m2-230b",
+      "name": "MiniMax M2 (230B)",
+      "company": "MiniMax",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-minimax-m2-230b",
+      "configUrls": [
+        "https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/abs/2605.26494"
+        }
+      ],
+      "attention": "GQA with QK-Norm and partial RoPE",
+      "decoder": "Sparse MoE",
+      "layerMix": "62 GQA",
+      "context": "196,608",
+      "scale": "230B total, 10B active (4.3% active)",
+      "repo": "MiniMaxAI/MiniMax-M2",
+      "revision": "757303d492a50514c312788b5247a4f696a4c6a3",
+      "configUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/757303d492a50514c312788b5247a4f696a4c6a3/config.json",
+      "configPath": "minimax-m2-230b.json",
+      "modelType": "minimax_m2",
+      "error": null
+    },
+    {
+      "id": "kimi-linear-48b-a3b",
+      "name": "Kimi Linear (48B-A3B)",
+      "company": "Moonshot AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-kimi-linear-48b-a3b",
+      "configUrls": [
+        "https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Base/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2510.26692"
+        }
+      ],
+      "attention": "3:1 Kimi Delta Attention and MLA",
+      "decoder": "Sparse hybrid",
+      "layerMix": "7 MLA + 20 Kimi Delta Attention",
+      "context": "1,000,000",
+      "scale": "48B total, 3B active (6.3% active)",
+      "repo": "moonshotai/Kimi-Linear-48B-A3B-Base",
+      "revision": "3b171c17bfc4ee348599b6781a2ca8715c21c8dc",
+      "configUrl": "https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Base/blob/3b171c17bfc4ee348599b6781a2ca8715c21c8dc/config.json",
+      "configPath": "kimi-linear-48b-a3b.json",
+      "modelType": "kimi_linear",
+      "error": null
+    },
+    {
+      "id": "olmo-3-32b",
+      "name": "OLMo 3 (32B)",
+      "company": "Ai2",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-olmo-3-32b",
+      "configUrls": [
+        "https://huggingface.co/allenai/Olmo-3-32B-Think/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/13_olmo3"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2512.13961"
+        }
+      ],
+      "attention": "GQA with QK-Norm and 3:1 sliding-window/global attention",
+      "decoder": "Dense",
+      "layerMix": "48 sliding-window + 16 global",
+      "context": "65,536",
+      "scale": "32B parameters",
+      "repo": "allenai/Olmo-3-32B-Think",
+      "revision": "f2edda15216e738ef2bb73771e11890e152b2112",
+      "configUrl": "https://huggingface.co/allenai/Olmo-3-32B-Think/blob/f2edda15216e738ef2bb73771e11890e152b2112/config.json",
+      "configPath": "olmo-3-32b.json",
+      "modelType": "olmo3",
+      "error": null
+    },
+    {
+      "id": "olmo-3-7b",
+      "name": "OLMo 3 (7B)",
+      "company": "Ai2",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-olmo-3-7b",
+      "configUrls": [
+        "https://huggingface.co/allenai/Olmo-3-1025-7B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/13_olmo3"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2512.13961"
+        }
+      ],
+      "attention": "MHA with QK-Norm and 3:1 sliding-window/global attention",
+      "decoder": "Dense",
+      "layerMix": "24 sliding-window + 8 global",
+      "context": "65,536",
+      "scale": "7B parameters",
+      "repo": "allenai/Olmo-3-1025-7B",
+      "revision": "a81bae42db3975be1671e27b9c9a56da1a9f980f",
+      "configUrl": "https://huggingface.co/allenai/Olmo-3-1025-7B/blob/a81bae42db3975be1671e27b9c9a56da1a9f980f/config.json",
+      "configPath": "olmo-3-7b.json",
+      "modelType": "olmo3",
+      "error": null
+    },
+    {
+      "id": "deepseek-v3-2",
+      "name": "DeepSeek V3.2 (671B)",
+      "company": "DeepSeek",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-deepseek-v3-2",
+      "configUrls": [
+        "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2512.02556"
+        }
+      ],
+      "attention": "MLA with DeepSeek Sparse Attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "61 MLA",
+      "context": "128,000",
+      "scale": "671B total, 37B active (5.5% active)",
+      "repo": "deepseek-ai/DeepSeek-V3.2",
+      "revision": "a7e62ac04ecb2c0a54d736dc46601c5606cf10a6",
+      "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/config.json",
+      "configPath": "deepseek-v3-2.json",
+      "modelType": "deepseek_v32",
+      "error": null
+    },
+    {
+      "id": "mistral-large-3",
+      "name": "Mistral Large 3 (673B)",
+      "company": "Mistral AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-mistral-large-3",
+      "configUrls": [],
+      "primaryLinks": [],
+      "attention": "MLA",
+      "decoder": "Sparse MoE",
+      "layerMix": "61 MLA",
+      "context": "262,144",
+      "scale": "673B total, 41B active (6.1% active)",
+      "repo": "mistralai/Mistral-Large-3-675B-Instruct-2512",
+      "error": null,
+      "revision": "383ffea2c7d60dfd44ca960e8e691709d4fdb9cd",
+      "configUrl": "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512/blob/383ffea2c7d60dfd44ca960e8e691709d4fdb9cd/params.json",
+      "configPath": "mistral-large-3.json",
+      "modelType": null,
+      "sourceNote": "official native params.json"
+    },
+    {
+      "id": "nemotron-3-nano-30b-a3b",
+      "name": "Nemotron 3 Nano (30B-A3B)",
+      "company": "NVIDIA",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-nemotron-3-nano-30b-a3b",
+      "configUrls": [
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Nano-Technical-Report.pdf"
+        }
+      ],
+      "attention": "Mostly Mamba-2 with a few GQA layers",
+      "decoder": "Hybrid MoE",
+      "layerMix": "6 GQA + 23 Mamba-2 + 23 MoE",
+      "context": "1,000,000",
+      "scale": "30B total, 3B active (10% active)",
+      "repo": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "revision": "bf77c3174f68ad409e1c2aa60daeb46e32d1c606",
+      "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/config.json",
+      "configPath": "nemotron-3-nano-30b-a3b.json",
+      "modelType": "nemotron_h",
+      "error": null
+    },
+    {
+      "id": "xiaomi-mimo-v2-flash-309b",
+      "name": "Xiaomi MiMo-V2-Flash (309B)",
+      "company": "Xiaomi",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-xiaomi-mimo-v2-flash-309b",
+      "configUrls": [
+        "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2601.02780"
+        }
+      ],
+      "attention": "5:1 sliding-window/global attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "40 sliding-window + 8 global",
+      "context": "262,144",
+      "scale": "309B total, 15B active (4.9% active)",
+      "repo": "XiaomiMiMo/MiMo-V2-Flash",
+      "revision": "1afd314a2406c282e0956375c34a676501c78649",
+      "configUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash/blob/1afd314a2406c282e0956375c34a676501c78649/config.json",
+      "configPath": "xiaomi-mimo-v2-flash-309b.json",
+      "modelType": "mimo_v2_flash",
+      "error": null
+    },
+    {
+      "id": "glm-4-7-355b",
+      "name": "GLM-4.7 (355B)",
+      "company": "Z.ai",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-glm-4-7-355b",
+      "configUrls": [
+        "https://huggingface.co/zai-org/GLM-4.7/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2508.06471"
+        }
+      ],
+      "attention": "GQA with QK-Norm",
+      "decoder": "Sparse MoE",
+      "layerMix": "92 GQA",
+      "context": "202,752",
+      "scale": "355B total, 32B active (9% active)",
+      "repo": "zai-org/GLM-4.7",
+      "revision": "602d01efcdd332c5238ca4bcede555defbe83eb7",
+      "configUrl": "https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/config.json",
+      "configPath": "glm-4-7-355b.json",
+      "modelType": "glm4_moe",
+      "error": null
+    },
+    {
+      "id": "arcee-ai-trinity-large-400b",
+      "name": "Arcee AI Trinity Large (400B)",
+      "company": "Arcee AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-arcee-ai-trinity-large-400b",
+      "configUrls": [
+        "https://huggingface.co/arcee-ai/Trinity-Large-Base/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2602.17004"
+        }
+      ],
+      "attention": "GQA with gated attention and 3:1 sliding-window/global attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "45 sliding-window + 15 global",
+      "context": "512,000",
+      "scale": "400B total, 13B active (3.3% active)",
+      "repo": "arcee-ai/Trinity-Large-Base",
+      "revision": "b2a665b40e5d67b05fb164205cf63155f7958e2a",
+      "configUrl": "https://huggingface.co/arcee-ai/Trinity-Large-Base/blob/b2a665b40e5d67b05fb164205cf63155f7958e2a/config.json",
+      "configPath": "arcee-ai-trinity-large-400b.json",
+      "modelType": "afmoe",
+      "error": null
+    },
+    {
+      "id": "glm-5-744b",
+      "name": "GLM-5 (744B)",
+      "company": "Z.ai",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-glm-5-744b",
+      "configUrls": [
+        "https://huggingface.co/zai-org/GLM-5/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2602.15763"
+        }
+      ],
+      "attention": "MLA with DeepSeek Sparse Attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "78 MLA",
+      "context": "202,752",
+      "scale": "744B total, 40B active (5.4% active)",
+      "repo": "zai-org/GLM-5",
+      "revision": "c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2",
+      "configUrl": "https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/config.json",
+      "configPath": "glm-5-744b.json",
+      "modelType": "glm_moe_dsa",
+      "error": null
+    },
+    {
+      "id": "nemotron-3-super-120b-a12b",
+      "name": "Nemotron 3 Super (120B-A12B)",
+      "company": "NVIDIA",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-nemotron-3-super-120b-a12b",
+      "configUrls": [
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf"
+        }
+      ],
+      "attention": "Mostly Mamba-2 with a few GQA layers",
+      "decoder": "Hybrid MoE",
+      "layerMix": "8 GQA + 40 Mamba-2 + 40 MoE",
+      "context": "1,000,000",
+      "scale": "120B total, 12B active (10% active)",
+      "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+      "revision": "2dc98e2afe4face0e4ce40972a915c45368bd34a",
+      "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/config.json",
+      "configPath": "nemotron-3-super-120b-a12b.json",
+      "modelType": "nemotron_h",
+      "error": null
+    },
+    {
+      "id": "gemma-4-31b",
+      "name": "Gemma 4 (31B)",
+      "company": "Google",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-gemma-4-31b",
+      "configUrls": [
+        "https://huggingface.co/google/gemma-4-31B-it/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://ai.google.dev/gemma/docs/core/model_card_4"
+        }
+      ],
+      "attention": "GQA with QK-Norm, unified K/V on global layers, p-RoPE on global layers, and 5:1 sliding-window/global attention",
+      "decoder": "Dense",
+      "layerMix": "50 sliding-window + 10 global",
+      "context": "256,000",
+      "scale": "30.7B parameters",
+      "repo": "google/gemma-4-31B-it",
+      "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+      "configUrl": "https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/config.json",
+      "configPath": "gemma-4-31b.json",
+      "modelType": "gemma4",
+      "error": null
+    },
+    {
+      "id": "gemma-4-26b-a4b",
+      "name": "Gemma 4 (26B-A4B)",
+      "company": "Google",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-gemma-4-26b-a4b",
+      "configUrls": [
+        "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://ai.google.dev/gemma/docs/core/model_card_4"
+        }
+      ],
+      "attention": "GQA with QK-Norm, unified K/V on global layers, p-RoPE on global layers, and 5:1 sliding-window/global attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "25 sliding-window + 5 global",
+      "context": "256,000",
+      "scale": "25.2B total, 3.8B active (15.1% active)",
+      "repo": "google/gemma-4-26B-A4B-it",
+      "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+      "configUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/config.json",
+      "configPath": "gemma-4-26b-a4b.json",
+      "modelType": "gemma4",
+      "error": null
+    },
+    {
+      "id": "gemma-4-12b",
+      "name": "Gemma 4 (12B)",
+      "company": "Google",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-gemma-4-12b",
+      "configUrls": [
+        "https://huggingface.co/google/gemma-4-12B-it/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/"
+        }
+      ],
+      "attention": "GQA with QK-Norm, unified K/V on global layers, p-RoPE on global layers, and 5:1 sliding-window/global attention",
+      "decoder": "Dense",
+      "layerMix": "40 sliding-window + 8 global",
+      "context": "128,000",
+      "scale": "12B parameters",
+      "repo": "google/gemma-4-12B-it",
+      "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+      "configUrl": "https://huggingface.co/google/gemma-4-12B-it/blob/707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7/config.json",
+      "configPath": "gemma-4-12b.json",
+      "modelType": "gemma4_unified",
+      "error": null
+    },
+    {
+      "id": "llama-3-2-3b",
+      "name": "Llama 3.2 (3B)",
+      "company": "Meta",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-llama-3-2-3b",
+      "configUrls": [],
+      "primaryLinks": [],
+      "attention": "GQA",
+      "decoder": "Dense",
+      "layerMix": "28 GQA",
+      "context": "128,000",
+      "scale": "3B parameters",
+      "repo": "unsloth/Llama-3.2-3B-Instruct",
+      "error": null,
+      "revision": "006f5dcd1393c3add266de40994ba96225e9689d",
+      "configUrl": "https://huggingface.co/unsloth/Llama-3.2-3B-Instruct/blob/006f5dcd1393c3add266de40994ba96225e9689d/config.json",
+      "configPath": "llama-3-2-3b.json",
+      "modelType": "llama",
+      "sourceNote": "public mirror of Llama 3.2 3B"
+    },
+    {
+      "id": "qwen3-coder-flash-30b-a3b",
+      "name": "Qwen3 Coder Flash (30B-A3B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-coder-flash-30b-a3b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/11_qwen3"
+        }
+      ],
+      "attention": "GQA",
+      "decoder": "Sparse MoE",
+      "layerMix": "48 GQA",
+      "context": "256,000",
+      "scale": "30B total, 3.3B active (11% active)",
+      "repo": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "revision": "b2cff646eb4bb1d68355c01b18ae02e7cf42d120",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/config.json",
+      "configPath": "qwen3-coder-flash-30b-a3b.json",
+      "modelType": "qwen3_moe",
+      "error": null
+    },
+    {
+      "id": "kimi-k2-5",
+      "name": "Kimi K2.5 (1T)",
+      "company": "Moonshot AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-kimi-k2-5",
+      "configUrls": [
+        "https://huggingface.co/moonshotai/Kimi-K2.5/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2602.02276"
+        }
+      ],
+      "attention": "MLA",
+      "decoder": "Sparse MoE",
+      "layerMix": "61 MLA",
+      "context": "256,000",
+      "scale": "1T total, 32B active (3.2% active)",
+      "repo": "moonshotai/Kimi-K2.5",
+      "revision": "4d01dfe0332d63057c186e0b262165819efb6611",
+      "configUrl": "https://huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/config.json",
+      "configPath": "kimi-k2-5.json",
+      "modelType": "kimi_k25",
+      "error": null
+    },
+    {
+      "id": "step-3-5-flash-196b",
+      "name": "Step 3.5 Flash (196B)",
+      "company": "StepFun",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-step-3-5-flash-196b",
+      "configUrls": [
+        "https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2602.10604"
+        }
+      ],
+      "attention": "GQA with 3:1 sliding-window attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "36 sliding-window + 12 global",
+      "context": "262,144",
+      "scale": "196B total, 11B active (5.6% active)",
+      "repo": "stepfun-ai/Step-3.5-Flash",
+      "revision": "ab446a3de5e171ea341227e24bb1f090e1b771f7",
+      "configUrl": "https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/config.json",
+      "configPath": "step-3-5-flash-196b.json",
+      "modelType": "step3p5",
+      "error": null
+    },
+    {
+      "id": "nanbeige-4-1-3b",
+      "name": "Nanbeige 4.1 (3B)",
+      "company": "BOSS Zhipin",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-nanbeige-4-1-3b",
+      "configUrls": [
+        "https://huggingface.co/Nanbeige/Nanbeige4.1-3B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2602.13367"
+        }
+      ],
+      "attention": "GQA",
+      "decoder": "Dense",
+      "layerMix": "32 GQA",
+      "context": "262,144",
+      "scale": "3B parameters",
+      "repo": "Nanbeige/Nanbeige4.1-3B",
+      "revision": "9c4555c37921c0982af8fffeee1e0a6e6b953c4f",
+      "configUrl": "https://huggingface.co/Nanbeige/Nanbeige4.1-3B/blob/9c4555c37921c0982af8fffeee1e0a6e6b953c4f/config.json",
+      "configPath": "nanbeige-4-1-3b.json",
+      "modelType": "llama",
+      "error": null
+    },
+    {
+      "id": "minimax-m2-5-230b",
+      "name": "MiniMax-M2.5 (230B)",
+      "company": "MiniMax",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-minimax-m2-5-230b",
+      "configUrls": [
+        "https://huggingface.co/MiniMaxAI/MiniMax-M2.5/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/abs/2605.26494"
+        }
+      ],
+      "attention": "GQA with QK-Norm",
+      "decoder": "Sparse MoE",
+      "layerMix": "62 GQA",
+      "context": "196,608",
+      "scale": "230B total, 10B active (4.3% active)",
+      "repo": "MiniMaxAI/MiniMax-M2.5",
+      "revision": "f710177d938eff80b684d42c5aa84b382612f21f",
+      "configUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5/blob/f710177d938eff80b684d42c5aa84b382612f21f/config.json",
+      "configPath": "minimax-m2-5-230b.json",
+      "modelType": "minimax_m2",
+      "error": null
+    },
+    {
+      "id": "tiny-aya-3-35b",
+      "name": "Tiny Aya (3.35B)",
+      "company": "Cohere",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-tiny-aya-3-35b",
+      "configUrls": [
+        "https://huggingface.co/CohereLabs/tiny-aya-base/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/15_tiny-aya"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2603.11510"
+        }
+      ],
+      "attention": "GQA with 3:1 sliding-window attention",
+      "decoder": "Dense",
+      "layerMix": "27 sliding-window + 9 global",
+      "context": "8,192",
+      "scale": "3.35B parameters",
+      "repo": "CohereLabs/tiny-aya-base",
+      "error": null,
+      "configPath": "tiny-aya-3-35b.json",
+      "modelType": "cohere2",
+      "configUrl": "https://huggingface.co/DevQuasar/CohereLabs.tiny-aya-base-GGUF/blob/7c8c35ade9cbdba2ddbfe9509583d34af36a048d/CohereLabs.tiny-aya-base.Q2_K.gguf",
+      "sourceNote": "转换配置：公开 GGUF 元数据 + 官方模型卡。非原始 HF config；未确定字段不视为精确实现。"
+    },
+    {
+      "id": "ling-2-5-1t",
+      "name": "Ling 2.5 (1T)",
+      "company": "InclusionAI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-ling-2-5-1t",
+      "configUrls": [
+        "https://huggingface.co/inclusionAI/Ling-2.5-1T/blob/main/config.json"
+      ],
+      "primaryLinks": [],
+      "attention": "Lightning Attention plus MLA",
+      "decoder": "Sparse hybrid",
+      "layerMix": "10 MLA + 70 Lightning Attention",
+      "context": "256,000",
+      "scale": "1T total, 63B active (6.3% active)",
+      "repo": "inclusionAI/Ling-2.5-1T",
+      "revision": "9c9d569b9183743eadee7f5ff13c15526fd0c751",
+      "configUrl": "https://huggingface.co/inclusionAI/Ling-2.5-1T/blob/9c9d569b9183743eadee7f5ff13c15526fd0c751/config.json",
+      "configPath": "ling-2-5-1t.json",
+      "modelType": "bailing_hybrid",
+      "error": null
+    },
+    {
+      "id": "qwen3-5-397b",
+      "name": "Qwen3.5 (397B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-5-397b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/16_qwen3.5"
+        }
+      ],
+      "attention": "3:1 Gated DeltaNet and Gated Attention",
+      "decoder": "Sparse hybrid",
+      "layerMix": "15 gated attention + 45 DeltaNet",
+      "context": "262,144",
+      "scale": "397B total, 17B active (4.3% active)",
+      "repo": "Qwen/Qwen3.5-397B-A17B",
+      "revision": "8472618112abcbd45acbcdc58436aff4233c23f7",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/config.json",
+      "configPath": "qwen3-5-397b.json",
+      "modelType": "qwen3_5_moe",
+      "error": null
+    },
+    {
+      "id": "sarvam-30b",
+      "name": "Sarvam (30B)",
+      "company": "Sarvam AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-sarvam-30b",
+      "configUrls": [
+        "https://huggingface.co/sarvamai/sarvam-30b/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://www.sarvam.ai/blogs/sarvam-30b-105b"
+        }
+      ],
+      "attention": "GQA with QK-Norm",
+      "decoder": "Sparse MoE",
+      "layerMix": "19 GQA",
+      "context": "131,072",
+      "scale": "30B total, 2.4B active (8% active)",
+      "repo": "sarvamai/sarvam-30b",
+      "revision": "071ae95e933605ca1104a6b4524a36a98488efa4",
+      "configUrl": "https://huggingface.co/sarvamai/sarvam-30b/blob/071ae95e933605ca1104a6b4524a36a98488efa4/config.json",
+      "configPath": "sarvam-30b.json",
+      "modelType": "sarvam_moe",
+      "error": null
+    },
+    {
+      "id": "sarvam-105b",
+      "name": "Sarvam (105B)",
+      "company": "Sarvam AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-sarvam-105b",
+      "configUrls": [
+        "https://huggingface.co/sarvamai/sarvam-105b/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://www.sarvam.ai/blogs/sarvam-30b-105b"
+        }
+      ],
+      "attention": "MLA with KV LayerNorm and NoPE + RoPE",
+      "decoder": "Sparse MoE",
+      "layerMix": "32 MLA",
+      "context": "131,072",
+      "scale": "105B total, 10.3B active (9.8% active)",
+      "repo": "sarvamai/sarvam-105b",
+      "revision": "abe264bdb8fb2244daadaa59ebc2020b3c139e89",
+      "configUrl": "https://huggingface.co/sarvamai/sarvam-105b/blob/abe264bdb8fb2244daadaa59ebc2020b3c139e89/config.json",
+      "configPath": "sarvam-105b.json",
+      "modelType": "sarvam_mla",
+      "error": null
+    },
+    {
+      "id": "phi-4",
+      "name": "Phi-4 (14B)",
+      "company": "Microsoft",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-phi-4",
+      "configUrls": [
+        "https://huggingface.co/microsoft/phi-4/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2412.08905"
+        }
+      ],
+      "attention": "GQA with RoPE",
+      "decoder": "Dense",
+      "layerMix": "40 GQA",
+      "context": "16,384",
+      "scale": "14B parameters",
+      "repo": "microsoft/phi-4",
+      "revision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+      "configUrl": "https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/config.json",
+      "configPath": "phi-4.json",
+      "modelType": "phi3",
+      "error": null
+    },
+    {
+      "id": "xlstm-7b",
+      "name": "xLSTM (7B)",
+      "company": "NXAI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-xlstm-7b",
+      "configUrls": [
+        "https://huggingface.co/NX-AI/xLSTM-7b/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/abs/2503.13427"
+        }
+      ],
+      "attention": "No self-attention; mLSTM recurrent layers with matrix memory",
+      "decoder": "Recurrent",
+      "layerMix": "32 mLSTM",
+      "context": "No explicit limit",
+      "scale": "7B parameters",
+      "repo": "NX-AI/xLSTM-7b",
+      "revision": "9dc507bd0939cf372a4a4f667335651d8e49dddb",
+      "configUrl": "https://huggingface.co/NX-AI/xLSTM-7b/blob/9dc507bd0939cf372a4a4f667335651d8e49dddb/config.json",
+      "configPath": "xlstm-7b.json",
+      "modelType": "xlstm",
+      "error": null
+    },
+    {
+      "id": "glm-4-5-air",
+      "name": "GLM-4.5-Air (106B)",
+      "company": "Z.ai",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-glm-4-5-air",
+      "configUrls": [
+        "https://huggingface.co/zai-org/GLM-4.5-Air/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2508.06471"
+        }
+      ],
+      "attention": "GQA",
+      "decoder": "Sparse MoE",
+      "layerMix": "46 GQA",
+      "context": "128,000",
+      "scale": "106B total, 12B active (11.3% active)",
+      "repo": "zai-org/GLM-4.5-Air",
+      "revision": "a24ceef6ce4f3536971efe9b778bdaa1bab18daa",
+      "configUrl": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/a24ceef6ce4f3536971efe9b778bdaa1bab18daa/config.json",
+      "configPath": "glm-4-5-air.json",
+      "modelType": "glm4_moe",
+      "error": null
+    },
+    {
+      "id": "ouro-thinking-2-6b",
+      "name": "Ouro-Thinking (2.6B)",
+      "company": "ByteDance",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-ouro-thinking-2-6b",
+      "configUrls": [
+        "https://huggingface.co/ByteDance/Ouro-2.6B-Thinking/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/abs/2510.25741"
+        }
+      ],
+      "attention": "MHA with RoPE",
+      "decoder": "Dense",
+      "layerMix": "48 shared MHA layers × 4 passes",
+      "context": "65,536",
+      "scale": "2.6B parameters",
+      "repo": "ByteDance/Ouro-2.6B-Thinking",
+      "revision": "f1edd81e7ac41355db670500ceaf204e0f73af68",
+      "configUrl": "https://huggingface.co/ByteDance/Ouro-2.6B-Thinking/blob/f1edd81e7ac41355db670500ceaf204e0f73af68/config.json",
+      "configPath": "ouro-thinking-2-6b.json",
+      "modelType": "ouro",
+      "error": null
+    },
+    {
+      "id": "intellect-3",
+      "name": "INTELLECT-3 (106B)",
+      "company": "Prime Intellect",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-intellect-3",
+      "configUrls": [
+        "https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://storage.googleapis.com/intellect-3-paper/INTELLECT_3_Technical_Report.pdf"
+        }
+      ],
+      "attention": "GQA",
+      "decoder": "Sparse MoE",
+      "layerMix": "46 GQA",
+      "context": "128,000",
+      "scale": "106B total, 12B active (11.3% active)",
+      "repo": "PrimeIntellect/INTELLECT-3",
+      "revision": "ff39d4a4688989f3f28868923d030c28e1b7d81c",
+      "configUrl": "https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/config.json",
+      "configPath": "intellect-3.json",
+      "modelType": "glm4_moe",
+      "error": null
+    },
+    {
+      "id": "longcat-flash-lite-68-5b-a3b",
+      "name": "LongCat-Flash-Lite (68.5B-A3B)",
+      "company": "Meituan",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-longcat-flash-lite-68-5b-a3b",
+      "configUrls": [
+        "https://huggingface.co/meituan-longcat/LongCat-Flash-Lite/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/abs/2601.21204"
+        }
+      ],
+      "attention": "MLA with RoPE + NoPE",
+      "decoder": "Sparse MoE",
+      "layerMix": "28 logical layers / 56 MLA sublayers",
+      "context": "256,000",
+      "scale": "68.5B total, ~3B active avg (4.4% active)",
+      "repo": "meituan-longcat/LongCat-Flash-Lite",
+      "revision": "b62b68827ead0b7fef3ba98b57f18484acaaec06",
+      "configUrl": "https://huggingface.co/meituan-longcat/LongCat-Flash-Lite/blob/b62b68827ead0b7fef3ba98b57f18484acaaec06/config.json",
+      "configPath": "longcat-flash-lite-68-5b-a3b.json",
+      "modelType": null,
+      "error": null
+    },
+    {
+      "id": "mistral-small-4",
+      "name": "Mistral Small 4 (119B)",
+      "company": "Mistral AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-mistral-small-4",
+      "configUrls": [
+        "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://mistral.ai/news/mistral-small-4"
+        }
+      ],
+      "attention": "MLA",
+      "decoder": "Sparse MoE",
+      "layerMix": "36 MLA",
+      "context": "256,000",
+      "scale": "119B total, 6.63B active (5.6% active)",
+      "repo": "mistralai/Mistral-Small-4-119B-2603",
+      "revision": "a11f36bebf709121056b1dbcc943d1c6afbe494d",
+      "configUrl": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/config.json",
+      "configPath": "mistral-small-4.json",
+      "modelType": "mistral3",
+      "error": null
+    },
+    {
+      "id": "nemotron-3-nano-4b",
+      "name": "Nemotron 3 Nano (4B)",
+      "company": "NVIDIA",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-nemotron-3-nano-4b",
+      "configUrls": [
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-3-nano-4b"
+        }
+      ],
+      "attention": "GQA with only 4 attention layers",
+      "decoder": "Dense hybrid",
+      "layerMix": "4 GQA + 21 Mamba-2 + 17 FFN",
+      "context": "262,144",
+      "scale": "4B parameters",
+      "repo": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+      "revision": "dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f",
+      "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/config.json",
+      "configPath": "nemotron-3-nano-4b.json",
+      "modelType": "nemotron_h",
+      "error": null
+    },
+    {
+      "id": "minimax-m2-7-230b",
+      "name": "MiniMax M2.7 (230B)",
+      "company": "MiniMax",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-minimax-m2-7-230b",
+      "configUrls": [
+        "https://huggingface.co/MiniMaxAI/MiniMax-M2.7/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/abs/2605.26494"
+        }
+      ],
+      "attention": "GQA with QK-Norm",
+      "decoder": "Sparse MoE",
+      "layerMix": "62 GQA",
+      "context": "196,608",
+      "scale": "230B total, 10B active (4.3% active)",
+      "repo": "MiniMaxAI/MiniMax-M2.7",
+      "revision": "d494266a4affc0d2995ba1fa35c8481cbd84294b",
+      "configUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7/blob/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json",
+      "configPath": "minimax-m2-7-230b.json",
+      "modelType": "minimax_m2",
+      "error": null
+    },
+    {
+      "id": "gemma-4-e2b",
+      "name": "Gemma 4 (E2B)",
+      "company": "Google",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-gemma-4-e2b",
+      "configUrls": [
+        "https://huggingface.co/google/gemma-4-E2B-it/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/blob/main/ch05/17_gemma4/standalone-gemma4-plus-kvcache.ipynb"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://ai.google.dev/gemma/docs/core/model_card_4"
+        }
+      ],
+      "attention": "Multi-query attention with QK-Norm, unified K/V on global layers, p-RoPE on global layers, and 4:1 sliding-window/global attention",
+      "decoder": "Dense",
+      "layerMix": "28 sliding-window + 7 global",
+      "context": "128,000",
+      "scale": "5.1B parameters (2.3B effective)",
+      "repo": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "configUrl": "https://huggingface.co/google/gemma-4-E2B-it/blob/3e22461f65e89153144f8adb70e3b8c2cc9845a7/config.json",
+      "configPath": "gemma-4-e2b.json",
+      "modelType": "gemma4",
+      "error": null
+    },
+    {
+      "id": "gemma-4-e4b",
+      "name": "Gemma 4 (E4B)",
+      "company": "Google",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-gemma-4-e4b",
+      "configUrls": [
+        "https://huggingface.co/google/gemma-4-E4B-it/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "From scratch",
+          "url": "https://github.com/rasbt/LLMs-from-scratch/blob/main/ch05/17_gemma4/standalone-gemma4-plus-kvcache.ipynb"
+        },
+        {
+          "text": "Tech report",
+          "url": "https://ai.google.dev/gemma/docs/core/model_card_4"
+        }
+      ],
+      "attention": "GQA with QK-Norm, unified K/V on global layers, p-RoPE on global layers, and 5:1 sliding-window/global attention",
+      "decoder": "Dense",
+      "layerMix": "35 sliding-window + 7 global",
+      "context": "128,000",
+      "scale": "8B parameters (4.5B effective)",
+      "repo": "google/gemma-4-E4B-it",
+      "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+      "configUrl": "https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json",
+      "configPath": "gemma-4-e4b.json",
+      "modelType": "gemma4",
+      "error": null
+    },
+    {
+      "id": "deepseek-v4-flash",
+      "name": "DeepSeek V4-Flash (284B)",
+      "company": "DeepSeek",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-deepseek-v4-flash",
+      "configUrls": [
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/blob/main/DeepSeek_V4.pdf"
+        }
+      ],
+      "attention": "MLA-style CSA/HCA with mHC",
+      "decoder": "Sparse MoE",
+      "layerMix": "43 CSA/HCA",
+      "context": "1,048,576",
+      "scale": "284B total, 13B active (4.6% active)",
+      "repo": "deepseek-ai/DeepSeek-V4-Flash",
+      "revision": "60d8d70770c6776ff598c94bb586a859a38244f1",
+      "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/blob/60d8d70770c6776ff598c94bb586a859a38244f1/config.json",
+      "configPath": "deepseek-v4-flash.json",
+      "modelType": "deepseek_v4",
+      "error": null
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek V4-Pro (1.6T)",
+      "company": "DeepSeek",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-deepseek-v4-pro",
+      "configUrls": [
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf"
+        }
+      ],
+      "attention": "MLA-style CSA/HCA with mHC",
+      "decoder": "Sparse MoE",
+      "layerMix": "61 CSA/HCA",
+      "context": "1,048,576",
+      "scale": "1.6T total, 49B active (3.1% active)",
+      "repo": "deepseek-ai/DeepSeek-V4-Pro",
+      "revision": "b5968e9190ef611bbf34a7229255be88a0e937c1",
+      "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/b5968e9190ef611bbf34a7229255be88a0e937c1/config.json",
+      "configPath": "deepseek-v4-pro.json",
+      "modelType": "deepseek_v4",
+      "error": null
+    },
+    {
+      "id": "laguna-xs-2",
+      "name": "Laguna XS.2 (33B)",
+      "company": "Poolside",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-laguna-xs-2",
+      "configUrls": [
+        "https://huggingface.co/poolside/Laguna-XS.2/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://poolside.ai/assets/laguna/laguna-m1-xs2-technical-report.pdf"
+        }
+      ],
+      "attention": "Gated GQA with QK-Norm and 3:1 sliding-window/global attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "30 sliding-window + 10 global",
+      "context": "131,072",
+      "scale": "33B total, 3B active (9.1% active)",
+      "repo": "poolside/Laguna-XS.2",
+      "revision": "a397bde04501591d0ac3d74a5d9d0a4ec298ffb8",
+      "configUrl": "https://huggingface.co/poolside/Laguna-XS.2/blob/a397bde04501591d0ac3d74a5d9d0a4ec298ffb8/config.json",
+      "configPath": "laguna-xs-2.json",
+      "modelType": "laguna",
+      "error": null
+    },
+    {
+      "id": "zaya1-8b",
+      "name": "ZAYA1-8B (8.4B)",
+      "company": "Zyphra",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-zaya1-8b",
+      "configUrls": [
+        "https://huggingface.co/Zyphra/ZAYA1-8B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/abs/2605.05365"
+        }
+      ],
+      "attention": "CCA with 4:1 GQA, RoPE, and Q/K L2 norm",
+      "decoder": "Sparse MoE",
+      "layerMix": "40 CCA/GQA attention + 40 top-1 MoE FFN entries",
+      "context": "131,072",
+      "scale": "8.4B total, 760M active/token (9% active)",
+      "repo": "Zyphra/ZAYA1-8B",
+      "revision": "67d34da515b30409ee8daa67c3605c4402d03f6f",
+      "configUrl": "https://huggingface.co/Zyphra/ZAYA1-8B/blob/67d34da515b30409ee8daa67c3605c4402d03f6f/config.json",
+      "configPath": "zaya1-8b.json",
+      "modelType": "zaya",
+      "error": null
+    },
+    {
+      "id": "glm-5-1",
+      "name": "GLM-5.1 (744B)",
+      "company": "Z.ai",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-glm-5-1",
+      "configUrls": [
+        "https://huggingface.co/zai-org/GLM-5.1/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2602.15763"
+        }
+      ],
+      "attention": "MLA with DeepSeek Sparse Attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "78 MLA",
+      "context": "202,752",
+      "scale": "744B total, 40B active (5.4% active)",
+      "repo": "zai-org/GLM-5.1",
+      "revision": "26e1bd6e011feb778d25ae34b09b07074139d92d",
+      "configUrl": "https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/config.json",
+      "configPath": "glm-5-1.json",
+      "modelType": "glm_moe_dsa",
+      "error": null
+    },
+    {
+      "id": "qwen3-6-35b-a3b",
+      "name": "Qwen3.6 (35B-A3B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-6-35b-a3b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b"
+        }
+      ],
+      "attention": "3:1 Gated DeltaNet and Gated Attention",
+      "decoder": "Sparse hybrid",
+      "layerMix": "10 gated attention + 30 DeltaNet",
+      "context": "262,144",
+      "scale": "35B total, 3B active (8.6% active)",
+      "repo": "Qwen/Qwen3.6-35B-A3B",
+      "revision": "995ad96eacd98c81ed38be0c5b274b04031597b0",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/config.json",
+      "configPath": "qwen3-6-35b-a3b.json",
+      "modelType": "qwen3_5_moe",
+      "error": null
+    },
+    {
+      "id": "kimi-k2-6",
+      "name": "Kimi K2.6 (1T)",
+      "company": "Moonshot AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-kimi-k2-6",
+      "configUrls": [
+        "https://huggingface.co/moonshotai/Kimi-K2.6/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://www.kimi.com/blog/kimi-k2-6.html"
+        }
+      ],
+      "attention": "MLA",
+      "decoder": "Sparse MoE",
+      "layerMix": "61 MLA",
+      "context": "256,000",
+      "scale": "1T total, 32B active (3.2% active)",
+      "repo": "moonshotai/Kimi-K2.6",
+      "revision": "7eb5002f6aadc958aed6a9177b7ed26bb94011bb",
+      "configUrl": "https://huggingface.co/moonshotai/Kimi-K2.6/blob/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/config.json",
+      "configPath": "kimi-k2-6.json",
+      "modelType": "kimi_k25",
+      "error": null
+    },
+    {
+      "id": "qwen3-6-27b",
+      "name": "Qwen3.6 (27B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-6-27b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3.6-27B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://qwen.ai/blog?id=qwen3.6-27b"
+        }
+      ],
+      "attention": "3:1 Gated DeltaNet and Gated Attention",
+      "decoder": "Dense hybrid",
+      "layerMix": "16 gated attention + 48 DeltaNet",
+      "context": "262,144",
+      "scale": "27B parameters",
+      "repo": "Qwen/Qwen3.6-27B",
+      "revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/config.json",
+      "configPath": "qwen3-6-27b.json",
+      "modelType": "qwen3_5",
+      "error": null
+    },
+    {
+      "id": "xiaomi-mimo-v2-5-310b",
+      "name": "Xiaomi MiMo-V2.5 (310B)",
+      "company": "Xiaomi",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-xiaomi-mimo-v2-5-310b",
+      "configUrls": [
+        "https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://mimo.xiaomi.com/mimo-v2-5"
+        }
+      ],
+      "attention": "5:1 sliding-window/global attention",
+      "decoder": "Sparse omnimodal MoE",
+      "layerMix": "39 sliding-window + 9 global",
+      "context": "1,048,576",
+      "scale": "310B total, 15B active (4.8% active)",
+      "repo": "XiaomiMiMo/MiMo-V2.5",
+      "revision": "63651580ca774f8504f676040460aed3e1244ac1",
+      "configUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/config.json",
+      "configPath": "xiaomi-mimo-v2-5-310b.json",
+      "modelType": "mimo_v2",
+      "error": null
+    },
+    {
+      "id": "xiaomi-mimo-v2-5-pro-1-02t",
+      "name": "Xiaomi MiMo-V2.5-Pro (1.02T)",
+      "company": "Xiaomi",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-xiaomi-mimo-v2-5-pro-1-02t",
+      "configUrls": [
+        "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://mimo.xiaomi.com/mimo-v2-5"
+        }
+      ],
+      "attention": "GQA with 6:1 sliding-window/global attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "60 sliding-window + 10 global",
+      "context": "1,048,576",
+      "scale": "1.02T total, 42B active (4.1% active)",
+      "repo": "XiaomiMiMo/MiMo-V2.5-Pro",
+      "revision": "21d1ecfecd7bd70f31be25ca49d7edd21f003659",
+      "configUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/config.json",
+      "configPath": "xiaomi-mimo-v2-5-pro-1-02t.json",
+      "modelType": "mimo_v2",
+      "error": null
+    },
+    {
+      "id": "ling-2-6-1t",
+      "name": "Ling 2.6 (1T)",
+      "company": "InclusionAI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-ling-2-6-1t",
+      "configUrls": [
+        "https://huggingface.co/inclusionAI/Ling-2.6-1T/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/inclusionAI/Ling-2.6-1T"
+        }
+      ],
+      "attention": "Lightning Attention plus MLA",
+      "decoder": "Sparse hybrid",
+      "layerMix": "10 MLA + 70 Lightning Attention + 1 MTP layer",
+      "context": "262,144",
+      "scale": "1T total, 63B active (6.3% active)",
+      "repo": "inclusionAI/Ling-2.6-1T",
+      "revision": "653026b0ba07b69ff81e03ef2e44eddd8b493cf5",
+      "configUrl": "https://huggingface.co/inclusionAI/Ling-2.6-1T/blob/653026b0ba07b69ff81e03ef2e44eddd8b493cf5/config.json",
+      "configPath": "ling-2-6-1t.json",
+      "modelType": "bailing_hybrid",
+      "error": null
+    },
+    {
+      "id": "tencent-hy3-preview-295b-a21b",
+      "name": "Tencent Hy3-preview (295B-A21B)",
+      "company": "Tencent",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-tencent-hy3-preview-295b-a21b",
+      "configUrls": [
+        "https://huggingface.co/tencent/Hy3-preview/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://www.tencent.com/en-us/articles/2202320.html"
+        }
+      ],
+      "attention": "GQA with QK-Norm",
+      "decoder": "Sparse MoE",
+      "layerMix": "80 GQA + 1 MTP layer",
+      "context": "262,144",
+      "scale": "295B total, 21B active (7.1% active)",
+      "repo": "tencent/Hy3-preview",
+      "revision": "549c2b3a0fd5b9a6c6059a9935bf0d59ab69d75a",
+      "configUrl": "https://huggingface.co/tencent/Hy3-preview/blob/549c2b3a0fd5b9a6c6059a9935bf0d59ab69d75a/config.json",
+      "configPath": "tencent-hy3-preview-295b-a21b.json",
+      "modelType": "hy_v3",
+      "error": null
+    },
+    {
+      "id": "granite-4-1-30b",
+      "name": "Granite 4.1 (30B)",
+      "company": "IBM",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-granite-4-1-30b",
+      "configUrls": [
+        "https://huggingface.co/ibm-granite/granite-4.1-30b/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/blog/ibm-granite/granite-4-1"
+        }
+      ],
+      "attention": "GQA with RoPE",
+      "decoder": "Dense",
+      "layerMix": "64 GQA",
+      "context": "131,072",
+      "scale": "30B parameters",
+      "repo": "ibm-granite/granite-4.1-30b",
+      "revision": "4fae6278f7132abf5e971f9de49ebbad09c54cce",
+      "configUrl": "https://huggingface.co/ibm-granite/granite-4.1-30b/blob/4fae6278f7132abf5e971f9de49ebbad09c54cce/config.json",
+      "configPath": "granite-4-1-30b.json",
+      "modelType": "granite",
+      "error": null
+    },
+    {
+      "id": "command-a-218b-a25b",
+      "name": "Command A+ (218B-A25B)",
+      "company": "Cohere",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-command-a-218b-a25b",
+      "configUrls": [
+        "https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://cohere.com/blog/command-a-plus"
+        }
+      ],
+      "attention": "16:1 GQA with 3:1 sliding-window/global attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "24 sliding-window + 8 global GQA/MoE",
+      "context": "128K input, 64K output",
+      "scale": "218B total, 25B active/token (11.5% active)",
+      "repo": "CohereLabs/command-a-plus-05-2026-w4a4",
+      "revision": "ebd2d72c0f9a84389c6b057136d38c435aea2700",
+      "configUrl": "https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4/blob/ebd2d72c0f9a84389c6b057136d38c435aea2700/config.json",
+      "configPath": "command-a-218b-a25b.json",
+      "modelType": "cohere2_vision",
+      "error": null
+    },
+    {
+      "id": "lfm2-5-1-2b",
+      "name": "LFM2.5 (1.2B)",
+      "company": "Liquid AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-lfm2-5-1-2b",
+      "configUrls": [
+        "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb"
+        }
+      ],
+      "attention": "LIV convolution blocks plus GQA",
+      "decoder": "Dense hybrid",
+      "layerMix": "10 LIV conv + 6 GQA",
+      "context": "128,000",
+      "scale": "1.2B parameters",
+      "repo": "LiquidAI/LFM2.5-1.2B-Thinking",
+      "revision": "f313478934a7612d22991f752959d7a1a8756fec",
+      "configUrl": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/config.json",
+      "configPath": "lfm2-5-1-2b.json",
+      "modelType": "lfm2",
+      "error": null
+    },
+    {
+      "id": "lfm2-5-350m",
+      "name": "LFM2.5 (350M)",
+      "company": "Liquid AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-lfm2-5-350m",
+      "configUrls": [
+        "https://huggingface.co/LiquidAI/LFM2.5-350M/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind"
+        }
+      ],
+      "attention": "LIV convolution blocks plus GQA",
+      "decoder": "Dense hybrid",
+      "layerMix": "10 LIV conv + 6 GQA",
+      "context": "128,000",
+      "scale": "350M parameters",
+      "repo": "LiquidAI/LFM2.5-350M",
+      "revision": "9e6c6ccf47cd318696e137d381a7ded8fe4df09f",
+      "configUrl": "https://huggingface.co/LiquidAI/LFM2.5-350M/blob/9e6c6ccf47cd318696e137d381a7ded8fe4df09f/config.json",
+      "configPath": "lfm2-5-350m.json",
+      "modelType": "lfm2",
+      "error": null
+    },
+    {
+      "id": "lfm2-5-8b-a1b",
+      "name": "LFM2.5 (8B-A1B)",
+      "company": "Liquid AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-lfm2-5-8b-a1b",
+      "configUrls": [
+        "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b"
+        }
+      ],
+      "attention": "LIV convolution blocks plus GQA and MoE",
+      "decoder": "Sparse hybrid",
+      "layerMix": "18 LIV conv + 6 GQA + MoE FFNs",
+      "context": "128,000",
+      "scale": "8.3B total, 1.5B active (18.1% active)",
+      "repo": "LiquidAI/LFM2.5-8B-A1B",
+      "revision": "5dd22602c2e9f6a097b1de4c4efe0658b605015c",
+      "configUrl": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/config.json",
+      "configPath": "lfm2-5-8b-a1b.json",
+      "modelType": "lfm2_moe",
+      "error": null
+    },
+    {
+      "id": "jetbrains-mellum2-thinking-12b-a2-5b",
+      "name": "JetBrains Mellum2 Thinking (12B-A2.5B)",
+      "company": "JetBrains",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-jetbrains-mellum2-thinking-12b-a2-5b",
+      "configUrls": [
+        "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/abs/2605.31268"
+        }
+      ],
+      "attention": "GQA with 3:1 sliding-window/full attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "21 sliding-window + 7 full GQA",
+      "context": "131,072",
+      "scale": "12B total, 2.5B active (20.8% active)",
+      "repo": "JetBrains/Mellum2-12B-A2.5B-Thinking",
+      "revision": "a7311550557e93cc706ab5dd3d879c1a11703ab4",
+      "configUrl": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/config.json",
+      "configPath": "jetbrains-mellum2-thinking-12b-a2-5b.json",
+      "modelType": "mellum",
+      "error": null
+    },
+    {
+      "id": "nemotron-3-ultra-550b-a55b",
+      "name": "Nemotron 3 Ultra (550B-A55B)",
+      "company": "NVIDIA",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-nemotron-3-ultra-550b-a55b",
+      "configUrls": [
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf"
+        }
+      ],
+      "attention": "Mostly Mamba-2 with a few GQA layers",
+      "decoder": "Hybrid MoE",
+      "layerMix": "12 GQA + 48 Mamba-2 + 48 MoE",
+      "context": "1,000,000",
+      "scale": "550B total, 55B active (10% active)",
+      "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+      "revision": "02462641f13d3af838b904f48195b9bb8a1e4ebc",
+      "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4/blob/02462641f13d3af838b904f48195b9bb8a1e4ebc/config.json",
+      "configPath": "nemotron-3-ultra-550b-a55b.json",
+      "modelType": "nemotron_h",
+      "error": null,
+      "snapshotNote": "Per-weight quantization maps omitted from visualization snapshot: quantization_config. All architecture fields retained; full pinned config is linked."
+    },
+    {
+      "id": "north-mini-code-30b-a3b",
+      "name": "North Mini Code (30B-A3B)",
+      "company": "Cohere",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-north-mini-code-30b-a3b",
+      "configUrls": [
+        "https://huggingface.co/CohereLabs/North-Mini-Code-1.0/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code"
+        }
+      ],
+      "attention": "8:1 GQA with 3:1 sliding-window/global attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "36 sliding-window + 13 global GQA/MoE",
+      "context": "256K input, 64K output",
+      "scale": "30B total, 3B active (10% active)",
+      "repo": "CohereLabs/North-Mini-Code-1.0",
+      "revision": "d11e61a842617a22dc328552fa5bb86231ee4f37",
+      "configUrl": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0/blob/d11e61a842617a22dc328552fa5bb86231ee4f37/config.json",
+      "configPath": "north-mini-code-30b-a3b.json",
+      "modelType": "cohere2_moe",
+      "error": null
+    },
+    {
+      "id": "kimi-k2-7-code",
+      "name": "Kimi K2.7 Code (1T)",
+      "company": "Moonshot AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-kimi-k2-7-code",
+      "configUrls": [
+        "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
+        }
+      ],
+      "attention": "MLA",
+      "decoder": "Sparse MoE",
+      "layerMix": "61 MLA",
+      "context": "256,000",
+      "scale": "1T total, 32B active (3.2% active)",
+      "repo": "moonshotai/Kimi-K2.7-Code",
+      "revision": "74797c9c62378b951a1f6fcf5c4631024e9b8bef",
+      "configUrl": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/config.json",
+      "configPath": "kimi-k2-7-code.json",
+      "modelType": "kimi_k25",
+      "error": null
+    },
+    {
+      "id": "minimax-m3-428b",
+      "name": "MiniMax M3 (428B)",
+      "company": "MiniMax",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-minimax-m3-428b",
+      "configUrls": [
+        "https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/abs/2606.13392"
+        }
+      ],
+      "attention": "GQA with QK-Norm and MiniMax Sparse Attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "3 full GQA + 57 MiniMax Sparse Attention",
+      "context": "1,048,576",
+      "scale": "428B total, 23B active (5.4% active)",
+      "repo": "MiniMaxAI/MiniMax-M3",
+      "revision": "f0e1c1e04d40177e4673a22097036854f536e9c0",
+      "configUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/f0e1c1e04d40177e4673a22097036854f536e9c0/config.json",
+      "configPath": "minimax-m3-428b.json",
+      "modelType": "minimax_m3_vl",
+      "error": null
+    },
+    {
+      "id": "vibethinker-3b",
+      "name": "VibeThinker-3B (3B)",
+      "company": "Weibo",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-vibethinker-3b",
+      "configUrls": [
+        "https://huggingface.co/WeiboAI/VibeThinker-3B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/abs/2606.16140"
+        }
+      ],
+      "attention": "8:1 GQA with RoPE",
+      "decoder": "Dense",
+      "layerMix": "36 GQA",
+      "context": "131,072",
+      "scale": "3B parameters",
+      "repo": "WeiboAI/VibeThinker-3B",
+      "revision": "77bd2cced09193c8b9a59a32bd8577bbd1f3e01c",
+      "configUrl": "https://huggingface.co/WeiboAI/VibeThinker-3B/blob/77bd2cced09193c8b9a59a32bd8577bbd1f3e01c/config.json",
+      "configPath": "vibethinker-3b.json",
+      "modelType": "qwen2",
+      "error": null
+    },
+    {
+      "id": "glm-5-2",
+      "name": "GLM-5.2 (744B)",
+      "company": "Z.ai",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-glm-5-2",
+      "configUrls": [
+        "https://huggingface.co/zai-org/GLM-5.2/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2602.15763"
+        }
+      ],
+      "attention": "MLA with DeepSeek Sparse Attention and IndexShare",
+      "decoder": "Sparse MoE",
+      "layerMix": "78 MLA/DSA",
+      "context": "1,048,576",
+      "scale": "744B total, 40B active (5.4% active)",
+      "repo": "zai-org/GLM-5.2",
+      "revision": "cf457fa734ab149ffef225f80893eb38c6ff5cdc",
+      "configUrl": "https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/config.json",
+      "configPath": "glm-5-2.json",
+      "modelType": "glm_moe_dsa",
+      "error": null
+    },
+    {
+      "id": "laguna-xs-2-1",
+      "name": "Laguna XS 2.1 (33B)",
+      "company": "Poolside",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-laguna-xs-2-1",
+      "configUrls": [
+        "https://huggingface.co/poolside/Laguna-XS-2.1/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
+        }
+      ],
+      "attention": "Gated GQA with QK-Norm and 3:1 sliding-window/global attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "30 sliding-window + 10 global GQA",
+      "context": "262,144",
+      "scale": "33B total, 3B active (9.1% active)",
+      "repo": "poolside/Laguna-XS-2.1",
+      "revision": "c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db",
+      "configUrl": "https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/config.json",
+      "configPath": "laguna-xs-2-1.json",
+      "modelType": "laguna",
+      "error": null
+    },
+    {
+      "id": "soofi-s-30b-a3b",
+      "name": "Soofi S (30B-A3B)",
+      "company": "SOOFI Consortium",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-soofi-s-30b-a3b",
+      "configUrls": [
+        "https://huggingface.co/Soofi-Project/Soofi-S-Base/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/abs/2607.09424"
+        }
+      ],
+      "attention": "Mostly Mamba-2 with 6 GQA layers and no positional embeddings (NoPE)",
+      "decoder": "Hybrid MoE",
+      "layerMix": "6 GQA + 23 Mamba-2 + 23 MoE",
+      "context": "1,048,576",
+      "scale": "31.6B total, 3.2B active (10.1% active)",
+      "repo": "Soofi-Project/Soofi-S-Base",
+      "error": null,
+      "configPath": "soofi-s-30b-a3b.json",
+      "modelType": "nemotron_h",
+      "configUrl": "https://huggingface.co/Soofi-Project/Soofi-S-Base/blob/main/README.md",
+      "sourceNote": "架构派生：官方模型卡说明沿用 Nemotron 3 Nano；共享专家数按官方卡修正。非原始 Soofi config。"
+    },
+    {
+      "id": "inkling",
+      "name": "Inkling (975B)",
+      "company": "Thinking Machines Lab",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-inkling",
+      "configUrls": [
+        "https://huggingface.co/thinkingmachines/Inkling/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://thinkingmachines.ai/news/introducing-inkling/"
+        }
+      ],
+      "attention": "GQA with QK-Norm and learned relative-position bias in a 5:1 sliding-window/global pattern",
+      "decoder": "Sparse MoE",
+      "layerMix": "55 sliding-window + 11 global GQA",
+      "context": "1,048,576",
+      "scale": "975B total, 41B active (4.2% active)",
+      "repo": "thinkingmachines/Inkling",
+      "revision": "828496eeae4c243ff1a22f7f28ff83694f2f7bc9",
+      "configUrl": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/config.json",
+      "configPath": "inkling.json",
+      "modelType": "inkling_mm_model",
+      "error": null
+    },
+    {
+      "id": "btl-3-27b",
+      "name": "BTL-3 (27B)",
+      "company": "Bad Theory Labs",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-btl-3-27b",
+      "configUrls": [],
+      "primaryLinks": [],
+      "attention": "3:1 Gated DeltaNet and Gated Attention",
+      "decoder": "Dense hybrid",
+      "layerMix": "16 gated attention + 48 DeltaNet",
+      "context": "262,144",
+      "scale": "27B base + 934 MB LoRA adapter",
+      "repo": "badtheorylabs/BTL-3",
+      "error": null,
+      "revision": "f76b519995d69090b754f22b7f45d0d406076c42",
+      "configUrl": "https://huggingface.co/badtheorylabs/BTL-3/blob/f76b519995d69090b754f22b7f45d0d406076c42/adapter_config.json",
+      "configPath": "btl-3-27b.json",
+      "modelType": "qwen3_5",
+      "sourceNote": "LoRA 派生：官方 adapter_config 声明基座 Qwen3.6-27B；展示基座结构，adapter 权重未计入。",
+      "baseRepo": "Qwen/Qwen3.6-27B"
+    },
+    {
+      "id": "antares-1b",
+      "name": "Antares (1B)",
+      "company": "Cisco",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-antares-1b",
+      "configUrls": [
+        "https://huggingface.co/fdtn-ai/antares-1b/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://cisco-foundation-ai.github.io/antares/technical-report.pdf"
+        }
+      ],
+      "attention": "GQA with RoPE",
+      "decoder": "Dense",
+      "layerMix": "40 GQA",
+      "context": "131,072",
+      "scale": "1B parameters",
+      "repo": "dpoled/antares-1b-mlx-8bit",
+      "error": null,
+      "revision": "0c20d04e51ff4a54bb43c57efc30a115f9066f85",
+      "configUrl": "https://huggingface.co/dpoled/antares-1b-mlx-8bit/blob/0c20d04e51ff4a54bb43c57efc30a115f9066f85/config.json",
+      "configPath": "antares-1b.json",
+      "modelType": "granitemoehybrid",
+      "sourceNote": "public mirror; weights are not downloaded"
+    },
+    {
+      "id": "laguna-s-2-1",
+      "name": "Laguna S 2.1 (118B)",
+      "company": "Poolside",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-laguna-s-2-1",
+      "configUrls": [
+        "https://huggingface.co/poolside/Laguna-S-2.1/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://poolside.ai/blog/introducing-laguna-s-2-1"
+        }
+      ],
+      "attention": "Gated GQA with QK-Norm and 3:1 sliding-window/global attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "36 sliding-window + 12 global GQA",
+      "context": "1,048,576",
+      "scale": "118B total, 8B active (6.8% active)",
+      "repo": "poolside/Laguna-S-2.1",
+      "revision": "0f573140834b11cfac0c2af97a101a7a69a13e22",
+      "configUrl": "https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/config.json",
+      "configPath": "laguna-s-2-1.json",
+      "modelType": "laguna",
+      "error": null
+    },
+    {
+      "id": "motif-3-beta",
+      "name": "Motif 3 Beta (314B)",
+      "company": "Motif Technologies",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-motif-3-beta",
+      "configUrls": [
+        "https://huggingface.co/Motif-Technologies/Motif-3-Beta/blob/main/config.json"
+      ],
+      "primaryLinks": [],
+      "attention": "GDLA with MLA-style latent projections, RoPE, and 3:1 sliding-window/full attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "39 sliding-window + 14 full GDLA",
+      "context": "262,144",
+      "scale": "314B total, 13B active (4.1% active)",
+      "repo": "Motif-Technologies/Motif-3-Beta",
+      "revision": "ad36ceadd3cadb3629e5d91da4ee85c1650f37ac",
+      "configUrl": "https://huggingface.co/Motif-Technologies/Motif-3-Beta/blob/ad36ceadd3cadb3629e5d91da4ee85c1650f37ac/config.json",
+      "configPath": "motif-3-beta.json",
+      "modelType": "Motif",
+      "error": null
+    },
+    {
+      "id": "nanbeige-4-2-3b",
+      "name": "Nanbeige 4.2 (3B)",
+      "company": "BOSS Zhipin",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-nanbeige-4-2-3b",
+      "configUrls": [
+        "https://huggingface.co/Nanbeige/Nanbeige4.2-3B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B/blob/main/Nanbeige42_report.pdf"
+        }
+      ],
+      "attention": "GQA with RoPE",
+      "decoder": "Dense",
+      "layerMix": "22 shared GQA layers × 2 passes",
+      "context": "262,144",
+      "scale": "4B total, 3B non-embedding",
+      "repo": "Nanbeige/Nanbeige4.2-3B",
+      "revision": "b82e54bd609793562a75cbf9337970a93369eab5",
+      "configUrl": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B/blob/b82e54bd609793562a75cbf9337970a93369eab5/config.json",
+      "configPath": "nanbeige-4-2-3b.json",
+      "modelType": "nanbeige",
+      "error": null
+    },
+    {
+      "id": "solar-open-2",
+      "name": "Solar Open 2 (250B)",
+      "company": "Upstage",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-solar-open-2",
+      "configUrls": [
+        "https://huggingface.co/upstage/Solar-Open2-250B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/upstage/Solar-Open2-250B/blob/main/Solar_Open_2_Tech_Report.pdf"
+        }
+      ],
+      "attention": "3:1 Kimi Delta Attention and gated GQA with NoPE",
+      "decoder": "Sparse hybrid",
+      "layerMix": "12 gated GQA + 36 Kimi Delta Attention",
+      "context": "1,048,576",
+      "scale": "250B total, 15B active (6% active)",
+      "repo": "upstage/Solar-Open2-250B",
+      "revision": "9190fbe63a2ad8e17fc766ccceb36de7c66f004b",
+      "configUrl": "https://huggingface.co/upstage/Solar-Open2-250B/blob/9190fbe63a2ad8e17fc766ccceb36de7c66f004b/config.json",
+      "configPath": "solar-open-2.json",
+      "modelType": "solar_open2",
+      "error": null
+    },
+    {
+      "id": "kimi-k3",
+      "name": "Kimi K3 (2.8T)",
+      "company": "Moonshot AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-kimi-k3",
+      "configUrls": [
+        "https://huggingface.co/moonshotai/Kimi-K3/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf"
+        }
+      ],
+      "attention": "3:1 Kimi Delta Attention and Gated MLA with NoPE",
+      "decoder": "Sparse hybrid",
+      "layerMix": "69 KDA + 24 Gated MLA",
+      "context": "1,048,576",
+      "scale": "2.8T total, 104B active (3.7% active)",
+      "repo": "moonshotai/Kimi-K3",
+      "revision": "f831ab66814297da540d832a5235f8e904f29d06",
+      "configUrl": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/config.json",
+      "configPath": "kimi-k3.json",
+      "modelType": "kimi_k3",
+      "error": null
+    },
+    {
+      "id": "ling-3-0-flash",
+      "name": "Ling 3.0 Flash (124B)",
+      "company": "InclusionAI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-ling-3-0-flash",
+      "configUrls": [
+        "https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash"
+        }
+      ],
+      "attention": "5:1 Kimi Delta Attention and gated MLA",
+      "decoder": "Sparse hybrid",
+      "layerMix": "35 Kimi Delta Attention + 7 gated MLA + 1 MTP layer",
+      "context": "262,144",
+      "scale": "124B total, 5.1B active (4.1% active)",
+      "repo": "inclusionAI/Ling-3.0-flash",
+      "revision": "fcc60a52b34c69c6271d0ac8a8cb0815020b6a43",
+      "configUrl": "https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/fcc60a52b34c69c6271d0ac8a8cb0815020b6a43/config.json",
+      "configPath": "ling-3-0-flash.json",
+      "modelType": "bailing_hybrid",
+      "error": null
+    },
+    {
+      "id": "muse-glimmer-30b",
+      "name": "Muse Glimmer (30B)",
+      "company": "Meta",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-muse-glimmer-30b",
+      "configUrls": [
+        "https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://research.meta.ai/static/muse-glimmer-methodology"
+        }
+      ],
+      "attention": "Gated GQA with scaleless QK-Norm, local-only RoPE, global NoPE, and 3:1 sliding-window/global attention",
+      "decoder": "Dense",
+      "layerMix": "39 sliding-window + 13 global gated GQA",
+      "context": "131,072+",
+      "scale": "29.6B parameters (including perception encoder)",
+      "repo": "meta-models/Muse-Glimmer-30B",
+      "revision": "a4e59da52a7bc87ae7251dd5545c0dd437c44b68",
+      "configUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/config.json",
+      "configPath": "muse-glimmer-30b.json",
+      "modelType": "muse_glimmer",
+      "error": null
+    },
+    {
+      "id": "nemotron-3-5-lightning-30b-a3b",
+      "name": "Nemotron 3.5 Lightning (30B-A3B)",
+      "company": "NVIDIA",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-nemotron-3-5-lightning-30b-a3b",
+      "configUrls": [
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Super-and-Lightning-Technical-Report.pdf"
+        }
+      ],
+      "attention": "Mostly Mamba-2 with six GQA layers",
+      "decoder": "Hybrid MoE",
+      "layerMix": "6 GQA + 23 Mamba-2 + 23 MoE; GQA + MoE MTP predictor",
+      "context": "1,048,576",
+      "scale": "30B total, 3B active (10% active)",
+      "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "revision": "bee7596271d1495f6992ae224aefde4410e816b8",
+      "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4/blob/bee7596271d1495f6992ae224aefde4410e816b8/config.json",
+      "configPath": "nemotron-3-5-lightning-30b-a3b.json",
+      "modelType": "nemotron_h",
+      "error": null,
+      "snapshotNote": "Per-weight quantization maps omitted from visualization snapshot: quantization_config. All architecture fields retained; full pinned config is linked."
+    },
+    {
+      "id": "qwen3-8-27b",
+      "name": "Qwen3.8 (27B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-8-27b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/config.json"
+      ],
+      "primaryLinks": [],
+      "attention": "3:1 Gated DeltaNet and Gated Attention",
+      "decoder": "Dense hybrid",
+      "layerMix": "16 gated attention + 48 DeltaNet",
+      "context": "262,144",
+      "scale": "27B parameters",
+      "repo": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/config.json",
+      "configPath": "qwen3-8-27b.json",
+      "modelType": "qwen3_5",
+      "error": null
+    },
+    {
+      "id": "ornith-1-5-35b-a3b",
+      "name": "Ornith 1.5 (35B-A3B)",
+      "company": "Ornith",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-ornith-1-5-35b-a3b",
+      "configUrls": [
+        "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://ornith.ai/ornith_1_5.html"
+        }
+      ],
+      "attention": "3:1 Gated DeltaNet and Gated Attention",
+      "decoder": "Sparse hybrid",
+      "layerMix": "10 gated attention + 30 DeltaNet",
+      "context": "262,144",
+      "scale": "35B total, 3B active (8.6% active)",
+      "repo": "ornith-ai/Ornith-1.5-35B-A3B",
+      "revision": "10fbf86fed7ecee4a061f8b499a618f46001cac1",
+      "configUrl": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/config.json",
+      "configPath": "ornith-1-5-35b-a3b.json",
+      "modelType": "qwen3_5_moe",
+      "error": null
+    },
+    {
+      "id": "glm-5-3-flash",
+      "name": "GLM-5.3-Flash (320B)",
+      "company": "Z.ai",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-glm-5-3-flash",
+      "configUrls": [
+        "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://arxiv.org/pdf/2602.15763"
+        }
+      ],
+      "attention": "3:1 Kimi Delta Attention and MLA with DeepSeek Sparse Attention",
+      "decoder": "Sparse hybrid",
+      "layerMix": "34 KDA + 11 MLA/DSA + 1 MTP layer",
+      "context": "1,048,576",
+      "scale": "320B total, 18B active (5.6% active)",
+      "repo": "zai-org/GLM-5.3-Flash",
+      "revision": "46a050bec13002ad29ee795c16e61cf4fa3c4a9c",
+      "configUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/config.json",
+      "configPath": "glm-5-3-flash.json",
+      "modelType": "glm5_next",
+      "error": null
+    },
+    {
+      "id": "qwen3-8-flash-next-125b-a6b",
+      "name": "Qwen3.8-Flash-Next (125B-A6B)",
+      "company": "Alibaba Cloud",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-qwen3-8-flash-next-125b-a6b",
+      "configUrls": [
+        "https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf"
+        }
+      ],
+      "attention": "3:1 Gated DeltaNet and Qwen Sparse Attention (QSA)",
+      "decoder": "Sparse hybrid",
+      "layerMix": "12 QSA + 36 DeltaNet",
+      "context": "262,144",
+      "scale": "125B core, 6B active (4.8% active); plus 51B n-gram embeddings and 4B MTP",
+      "repo": "Qwen/Qwen3.8-Flash-Next",
+      "revision": "de4b8e4d43b917e7706784d8bb445c9af86a3540",
+      "configUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/config.json",
+      "configPath": "qwen3-8-flash-next-125b-a6b.json",
+      "modelType": "qwen4_exp",
+      "error": null
+    },
+    {
+      "id": "tencent-hy4-preview-770b-a49b",
+      "name": "Tencent Hy4-preview (770B-A49B)",
+      "company": "Tencent",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-tencent-hy4-preview-770b-a49b",
+      "configUrls": [
+        "https://huggingface.co/tencent/Hy4-preview/blob/main/config.json"
+      ],
+      "primaryLinks": [],
+      "attention": "Gated MLA with DeepSeek Sparse Attention and IndexCache",
+      "decoder": "Sparse MoE",
+      "layerMix": "78 gated MLA/DSA + 1 MTP layer",
+      "context": "1,048,576",
+      "scale": "770B backbone, 49B active (6.4% active); plus 10B MTP",
+      "repo": "tencent/Hy4-preview",
+      "revision": "705d81ee51566a186d645b74c974d642ef2828fe",
+      "configUrl": "https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/config.json",
+      "configPath": "tencent-hy4-preview-770b-a49b.json",
+      "modelType": "hy_v4",
+      "error": null
+    },
+    {
+      "id": "deepseek-v4-1-flash",
+      "name": "DeepSeek V4.1-Flash (552B)",
+      "company": "DeepSeek",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-deepseek-v4-1-flash",
+      "configUrls": [
+        "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf"
+        }
+      ],
+      "attention": "MLA-style CSA2 + SWA with cross-layer KV and sparse-index reuse",
+      "decoder": "Sparse MoE (causal encoder-decoder)",
+      "layerMix": "20 encoder + 20 decoder layers; 2 SWA-only + 38 CSA2/SWA",
+      "context": "1,048,576",
+      "scale": "552B backbone + 196B Engram; 8B active prefill, 16B active decode (2.9% of backbone)",
+      "repo": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "revision": "314113f8a7dadb388215396ba5fbee2c610a04d6",
+      "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/314113f8a7dadb388215396ba5fbee2c610a04d6/config.json",
+      "configPath": "deepseek-v4-1-flash.json",
+      "modelType": "deepseek_v41",
+      "error": null
+    },
+    {
+      "id": "step-5-preview-600b",
+      "name": "Step-5 Preview (600B)",
+      "company": "StepFun",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-step-5-preview-600b",
+      "configUrls": [],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://www.stepfun.com/step-5-preview"
+        }
+      ],
+      "attention": "Gated GQA with QK-Norm and 3:1 sliding-window/sparse attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "69 sliding-window + 23 sparse GQA + 3 MTP layers",
+      "context": "1,048,576",
+      "scale": "600B total, 27B active (4.5% active)",
+      "repo": "stepfun-ai/Step-5-Preview",
+      "revision": "364b3b03fed2477aa0953fe855a2c4c8c48ee3cc",
+      "configUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/config.json",
+      "configPath": "step-5-preview-600b.json",
+      "modelType": "step5_vl",
+      "error": null
+    },
+    {
+      "id": "xiaomi-mimo-v2-6-flash-rl-309b",
+      "name": "Xiaomi MiMo-V2.6-Flash-RL (309B)",
+      "company": "Xiaomi",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-xiaomi-mimo-v2-6-flash-rl-309b",
+      "configUrls": [
+        "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/resolve/main/MiMo_V2_6_technical_report.pdf"
+        }
+      ],
+      "attention": "GQA with sliding-window/global attention",
+      "decoder": "Sparse omnimodal MoE",
+      "layerMix": "39 sliding-window + 9 global",
+      "context": "1,048,576",
+      "scale": "309B total, 15B active (4.9% active)",
+      "repo": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+      "revision": "dcd3fd83fb181622fbc606fbb1709901982a62c2",
+      "configUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/dcd3fd83fb181622fbc606fbb1709901982a62c2/config.json",
+      "configPath": "xiaomi-mimo-v2-6-flash-rl-309b.json",
+      "modelType": "mimo_v2",
+      "error": null
+    },
+    {
+      "id": "xiaomi-mimo-v2-6-pro-rl-1-02t",
+      "name": "Xiaomi MiMo-V2.6-Pro-RL (1.02T)",
+      "company": "Xiaomi",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-xiaomi-mimo-v2-6-pro-rl-1-02t",
+      "configUrls": [
+        "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/resolve/main/MiMo_V2_6_technical_report.pdf"
+        }
+      ],
+      "attention": "GQA with 6:1 sliding-window/global attention",
+      "decoder": "Sparse omnimodal MoE",
+      "layerMix": "60 sliding-window + 10 global",
+      "context": "1,048,576",
+      "scale": "1.02T total, 42B active (4.1% active)",
+      "repo": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+      "revision": "b61f21852680ee02a29e946e18cf8697f4844061",
+      "configUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/b61f21852680ee02a29e946e18cf8697f4844061/config.json",
+      "configPath": "xiaomi-mimo-v2-6-pro-rl-1-02t.json",
+      "modelType": "mimo_v2",
+      "error": null
+    },
+    {
+      "id": "ember-1",
+      "name": "Ember-1 (2.8T)",
+      "company": "Fireworks AI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-ember-1",
+      "configUrls": [],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://fireworks.ai/blog/ember-1"
+        }
+      ],
+      "attention": "3:1 Kimi Delta Attention and Gated MLA with NoPE",
+      "decoder": "Sparse hybrid",
+      "layerMix": "69 KDA + 24 Gated MLA",
+      "context": "1,048,576",
+      "scale": "2.8T total, 104B active (3.7% active)",
+      "repo": "moonshotai/Kimi-K3",
+      "error": null,
+      "revision": "f831ab66814297da540d832a5235f8e904f29d06",
+      "configUrl": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/config.json",
+      "configPath": "ember-1.json",
+      "modelType": "kimi_k3",
+      "sourceNote": "基座架构：官方说明基于 Kimi K3；当前使用 Kimi K3 配置，不含派生模型未公开的变化。"
+    },
+    {
+      "id": "naive-n0-5-flash-309b",
+      "name": "Naive-N0.5-Flash (309B)",
+      "company": "NaiveAI",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-naive-n0-5-flash-309b",
+      "configUrls": [
+        "https://huggingface.co/NaiveAI/Naive-N0.5-Flash/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://naive.ai/en/research/"
+        }
+      ],
+      "attention": "GQA with sliding-window attention and DeepSeek Sparse Attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "39 sliding-window + 9 GQA/DSA",
+      "context": "1,048,576",
+      "scale": "309B total, 15.5B active (5.0% active)",
+      "repo": "NaiveAI/Naive-N0.5-Flash",
+      "revision": "9c9a11e8d2a6b8507d48b533345ef591cf9a6494",
+      "configUrl": "https://huggingface.co/NaiveAI/Naive-N0.5-Flash/blob/9c9a11e8d2a6b8507d48b533345ef591cf9a6494/config.json",
+      "configPath": "naive-n0-5-flash-309b.json",
+      "modelType": "naive_n05_flash",
+      "error": null
+    },
+    {
+      "id": "kolibri-1-78b",
+      "name": "Kolibri-1 (78B)",
+      "company": "Aleph Alpha",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-kolibri-1-78b",
+      "configUrls": [
+        "https://huggingface.co/Aleph-Alpha/Kolibri-1/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://aleph-alpha.com/downloads/tech-report.pdf"
+        }
+      ],
+      "attention": "GQA with QK-Norm and 4:1 sliding-window/global attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "40 sliding-window + 10 global GQA",
+      "context": "262,144 native; 1,048,576 extrapolated",
+      "scale": "78B total, 3.46B active (4.4% active)",
+      "repo": "Aleph-Alpha/Kolibri-1",
+      "revision": "452723312f300bf9542cd425f9d39bf832c2af40",
+      "configUrl": "https://huggingface.co/Aleph-Alpha/Kolibri-1/blob/452723312f300bf9542cd425f9d39bf832c2af40/config.json",
+      "configPath": "kolibri-1-78b.json",
+      "modelType": "kolibri1",
+      "error": null
+    },
+    {
+      "id": "muse-spark-open-816b-a42b",
+      "name": "Muse Spark Open (816B-A42B)",
+      "company": "Meta",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-muse-spark-open-816b-a42b",
+      "configUrls": [
+        "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B/blob/main/config.json"
+      ],
+      "primaryLinks": [],
+      "attention": "Gated GQA with scaleless QK-Norm, local-only RoPE, global NoPE, and 3:1 sliding-window/global attention",
+      "decoder": "Sparse MoE",
+      "layerMix": "46 sliding-window + 16 global gated GQA",
+      "context": "1,048,576",
+      "scale": "816B total, 42B active (5.1% active)",
+      "repo": "unsloth/Muse-Spark-Open-816B-A42B",
+      "error": null,
+      "revision": "49cade7b0c6ed297f0434229ac67eea5f9ae1220",
+      "configUrl": "https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B/blob/49cade7b0c6ed297f0434229ac67eea5f9ae1220/config.json",
+      "configPath": "muse-spark-open-816b-a42b.json",
+      "modelType": "muse_spark",
+      "sourceNote": "public mirror; weights are not downloaded"
+    },
+    {
+      "id": "nemotron-3-5-super-vl-120b-a12b",
+      "name": "Nemotron 3.5 Super VL (120B-A12B)",
+      "company": "NVIDIA",
+      "gallery": "https://sebastianraschka.com/llm-architecture-gallery/#card-nemotron-3-5-super-vl-120b-a12b",
+      "configUrls": [
+        "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/blob/main/config.json"
+      ],
+      "primaryLinks": [
+        {
+          "text": "Tech report",
+          "url": "https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Super-and-Lightning-Technical-Report.pdf"
+        }
+      ],
+      "attention": "Mostly Mamba-2 with eight GQA layers",
+      "decoder": "Hybrid MoE",
+      "layerMix": "8 GQA + 40 Mamba-2 + 40 LatentMoE; GQA + MoE MTP predictor",
+      "context": "1,048,576",
+      "scale": "120B total, 12B active (10% active)",
+      "repo": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+      "revision": "59b8721646c38111a242da18218859fb2b454322",
+      "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/blob/59b8721646c38111a242da18218859fb2b454322/config.json",
+      "configPath": "nemotron-3-5-super-vl-120b-a12b.json",
+      "modelType": "nemotron_h_omni",
+      "error": null,
+      "snapshotNote": "Per-weight quantization maps omitted from visualization snapshot: quantization_config. All architecture fields retained; full pinned config is linked."
+    }
+  ]
+}

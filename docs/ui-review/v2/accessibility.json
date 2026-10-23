@@ -1,0 +1,26 @@
+[
+  {
+    "name": "graph",
+    "violations": []
+  },
+  {
+    "name": "tools",
+    "violations": []
+  },
+  {
+    "name": "library",
+    "violations": []
+  },
+  {
+    "name": "2d",
+    "violations": []
+  },
+  {
+    "name": "3d",
+    "violations": []
+  },
+  {
+    "name": "mobile-tools",
+    "violations": []
+  }
+]

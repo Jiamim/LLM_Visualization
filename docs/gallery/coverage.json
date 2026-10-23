@@ -1,0 +1,1936 @@
+[
+  {
+    "id": "gpt-2-xl-1-5b",
+    "name": "GPT-2 XL (1.5B)",
+    "repo": "openai-community/gpt2-xl",
+    "configUrl": "https://huggingface.co/openai-community/gpt2-xl/blob/15ea56dee5df4983c59b2538573817e1667135e2/config.json",
+    "sourceNote": null,
+    "kind": "gpt2",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 48,
+    "mix": {
+      "attention": 48
+    },
+    "notes": []
+  },
+  {
+    "id": "llama-3-8b",
+    "name": "Llama 3 (8B)",
+    "repo": "NousResearch/Meta-Llama-3-8B",
+    "configUrl": "https://huggingface.co/NousResearch/Meta-Llama-3-8B/blob/315b20096dc791d381d514deb5f8bd9c8d6d3061/config.json",
+    "sourceNote": "public mirror of Meta Llama 3",
+    "kind": "llama",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 32,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "llama-3-2-1b",
+    "name": "Llama 3.2 (1B)",
+    "repo": "unsloth/Llama-3.2-1B-Instruct",
+    "configUrl": "https://huggingface.co/unsloth/Llama-3.2-1B-Instruct/blob/5a8abab4a5d6f164389b1079fb721cfab8d7126c/config.json",
+    "sourceNote": "public mirror of Llama 3.2 1B",
+    "kind": "llama",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 16,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "olmo-2-7b",
+    "name": "OLMo 2 (7B)",
+    "repo": "allenai/OLMo-2-1124-7B-Instruct",
+    "configUrl": "https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct/blob/470b1fba1ae01581f270116362ee4aa1b97f4c84/config.json",
+    "sourceNote": null,
+    "kind": "olmo2",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 32,
+    "mix": {
+      "attention": 32
+    },
+    "notes": [
+      "配置默认 use_cache=false。缓存页仅展示开启推理缓存时的理论状态，不宣称此配置默认会分配。"
+    ]
+  },
+  {
+    "id": "deepseek-v3",
+    "name": "DeepSeek V3 (671B)",
+    "repo": "deepseek-ai/DeepSeek-V3",
+    "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3/blob/e815299b0bcbac849fa540c768ef21845365c9eb/config.json",
+    "sourceNote": null,
+    "kind": "deepseek_v3",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 61,
+    "mix": {
+      "mla": 61
+    },
+    "notes": []
+  },
+  {
+    "id": "deepseek-r1",
+    "name": "DeepSeek R1 (671B)",
+    "repo": "deepseek-ai/DeepSeek-R1",
+    "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-R1/blob/56d4cbbb4d29f4355bab4b9a39ccb717a14ad5ad/config.json",
+    "sourceNote": null,
+    "kind": "deepseek_v3",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 61,
+    "mix": {
+      "mla": 61
+    },
+    "notes": []
+  },
+  {
+    "id": "gemma-3-27b",
+    "name": "Gemma 3 (27B)",
+    "repo": "unsloth/gemma-3-27b-it",
+    "configUrl": "https://huggingface.co/unsloth/gemma-3-27b-it/blob/7a5a3053dbd5d1d58e48159e87b9df2fc545a49a/config.json",
+    "sourceNote": "public mirror of Gemma 3",
+    "kind": "gemma3_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 62,
+    "mix": {
+      "attention": 62
+    },
+    "notes": []
+  },
+  {
+    "id": "mistral-small-3-1-24b",
+    "name": "Mistral Small 3.1 (24B)",
+    "repo": "mistralai/Mistral-Small-3.1-24B-Base-2503",
+    "configUrl": "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503/blob/ba6496e3dce1d0bdc93848804b1d4b9d5f3c57bc/config.json",
+    "sourceNote": null,
+    "kind": "mistral",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 40,
+    "mix": {
+      "attention": 40
+    },
+    "notes": []
+  },
+  {
+    "id": "llama-4-maverick",
+    "name": "Llama 4 Maverick (400B)",
+    "repo": "unsloth/Llama-4-Maverick-17B-128E-Instruct",
+    "configUrl": "https://huggingface.co/unsloth/Llama-4-Maverick-17B-128E-Instruct/blob/86c5ecb6f2fbddf604c60120125fb202e09f2556/config.json",
+    "sourceNote": "public mirror of Llama 4",
+    "kind": "llama4_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 48,
+    "mix": {
+      "attention": 48
+    },
+    "notes": []
+  },
+  {
+    "id": "qwen3-0-6b",
+    "name": "Qwen3 (0.6B)",
+    "repo": "Qwen/Qwen3-0.6B-Base",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3-0.6B-Base/blob/da87bfb608c14b7cf20ba1ce41287e8de496c0cd/config.json",
+    "sourceNote": null,
+    "kind": "qwen3",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 28,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "qwen3-235b-a22b",
+    "name": "Qwen3 (235B-A22B)",
+    "repo": "Qwen/Qwen3-235B-A22B",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B/blob/8efa61729e24bd65b1d152b5ab5409052aa80e65/config.json",
+    "sourceNote": null,
+    "kind": "qwen3_moe",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 94,
+    "mix": {
+      "attention": 94
+    },
+    "notes": []
+  },
+  {
+    "id": "qwen3-30b-a3b",
+    "name": "Qwen3 (30B-A3B)",
+    "repo": "Qwen/Qwen3-30B-A3B",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3-30B-A3B/blob/ad44e777bcd18fa416d9da3bd8f70d33ebb85d39/config.json",
+    "sourceNote": null,
+    "kind": "qwen3_moe",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 48,
+    "mix": {
+      "attention": 48
+    },
+    "notes": []
+  },
+  {
+    "id": "qwen3-32b",
+    "name": "Qwen3 (32B)",
+    "repo": "Qwen/Qwen3-32B",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3-32B/blob/9216db5781bf21249d130ec9da846c4624c16137/config.json",
+    "sourceNote": null,
+    "kind": "qwen3",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 64,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "qwen3-4b",
+    "name": "Qwen3 (4B)",
+    "repo": "Qwen/Qwen3-4B",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3-4B/blob/1cfa9a7208912126459214e8b04321603b3df60c/config.json",
+    "sourceNote": null,
+    "kind": "qwen3",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 36,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "qwen3-8b",
+    "name": "Qwen3 (8B)",
+    "repo": "Qwen/Qwen3-8B",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3-8B/blob/b968826d9c46dd6066d109eabc6255188de91218/config.json",
+    "sourceNote": null,
+    "kind": "qwen3",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 36,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "smollm3-3b",
+    "name": "SmolLM3 (3B)",
+    "repo": "HuggingFaceTB/SmolLM3-3B-Base",
+    "configUrl": "https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base/blob/d78a42f79198603e614095753484a04c10c2b940/config.json",
+    "sourceNote": null,
+    "kind": "smollm3",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 36,
+    "mix": {
+      "attention": 36
+    },
+    "notes": []
+  },
+  {
+    "id": "kimi-k2",
+    "name": "Kimi K2 (1T)",
+    "repo": "moonshotai/Kimi-K2-Base",
+    "configUrl": "https://huggingface.co/moonshotai/Kimi-K2-Base/blob/ce72df012259dcc55d945e890f815fe7ef69159c/config.json",
+    "sourceNote": null,
+    "kind": "kimi_k2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 61,
+    "mix": {
+      "mla": 61
+    },
+    "notes": []
+  },
+  {
+    "id": "glm-4-5-355b",
+    "name": "GLM-4.5 (355B)",
+    "repo": "zai-org/GLM-4.5",
+    "configUrl": "https://huggingface.co/zai-org/GLM-4.5/blob/cbb2c7cfb52fa128a9660cb1a7a78e017899e115/config.json",
+    "sourceNote": null,
+    "kind": "glm4_moe",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 92,
+    "mix": {
+      "attention": 92
+    },
+    "notes": []
+  },
+  {
+    "id": "gpt-oss-120b",
+    "name": "GPT-OSS (120B)",
+    "repo": "openai/gpt-oss-120b",
+    "configUrl": "https://huggingface.co/openai/gpt-oss-120b/blob/b5c939de8f754692c1647ca79fbf85e8c1e70f8a/config.json",
+    "sourceNote": null,
+    "kind": "gpt_oss",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 36,
+    "mix": {
+      "attention": 36
+    },
+    "notes": []
+  },
+  {
+    "id": "gpt-oss-20b",
+    "name": "GPT-OSS (20B)",
+    "repo": "openai/gpt-oss-20b",
+    "configUrl": "https://huggingface.co/openai/gpt-oss-20b/blob/6cee5e81ee83917806bbde320786a8fb61efebee/config.json",
+    "sourceNote": null,
+    "kind": "gpt_oss",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 24,
+    "mix": {
+      "attention": 24
+    },
+    "notes": []
+  },
+  {
+    "id": "gemma-3-270m",
+    "name": "Gemma 3 (270M)",
+    "repo": "unsloth/gemma-3-270m",
+    "configUrl": "https://huggingface.co/unsloth/gemma-3-270m/blob/edcf1fe394ee1168e7c5538afd104cfb1f7947e6/config.json",
+    "sourceNote": "public mirror of Gemma 3",
+    "kind": "gemma3_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 18,
+    "mix": {
+      "attention": 18
+    },
+    "notes": []
+  },
+  {
+    "id": "grok-2-5-270b",
+    "name": "Grok 2.5 (270B)",
+    "repo": "xai-org/grok-2",
+    "configUrl": "https://huggingface.co/xai-org/grok-2/blob/daf4395a80ad177386cfe39641b64fc12b1d70ed/config.json",
+    "sourceNote": null,
+    "kind": "git",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 64,
+    "mix": {
+      "attention": 64
+    },
+    "notes": []
+  },
+  {
+    "id": "qwen3-next-80b-a3b",
+    "name": "Qwen3 Next (80B-A3B)",
+    "repo": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/9c7f2fbe84465e40164a94cc16cd30b6999b0cc7/config.json",
+    "sourceNote": null,
+    "kind": "qwen3_next",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 48,
+    "mix": {
+      "delta": 36,
+      "attention": 12
+    },
+    "notes": []
+  },
+  {
+    "id": "minimax-m2-230b",
+    "name": "MiniMax M2 (230B)",
+    "repo": "MiniMaxAI/MiniMax-M2",
+    "configUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2/blob/757303d492a50514c312788b5247a4f696a4c6a3/config.json",
+    "sourceNote": null,
+    "kind": "minimax_m2",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 62,
+    "mix": {
+      "attention": 62
+    },
+    "notes": []
+  },
+  {
+    "id": "kimi-linear-48b-a3b",
+    "name": "Kimi Linear (48B-A3B)",
+    "repo": "moonshotai/Kimi-Linear-48B-A3B-Base",
+    "configUrl": "https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Base/blob/3b171c17bfc4ee348599b6781a2ca8715c21c8dc/config.json",
+    "sourceNote": null,
+    "kind": "kimi_linear",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 27,
+    "mix": {
+      "kda": 20,
+      "mla": 7
+    },
+    "notes": []
+  },
+  {
+    "id": "olmo-3-32b",
+    "name": "OLMo 3 (32B)",
+    "repo": "allenai/Olmo-3-32B-Think",
+    "configUrl": "https://huggingface.co/allenai/Olmo-3-32B-Think/blob/f2edda15216e738ef2bb73771e11890e152b2112/config.json",
+    "sourceNote": null,
+    "kind": "olmo3",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 64,
+    "mix": {
+      "attention": 64
+    },
+    "notes": [
+      "配置默认 use_cache=false。缓存页仅展示开启推理缓存时的理论状态，不宣称此配置默认会分配。"
+    ]
+  },
+  {
+    "id": "olmo-3-7b",
+    "name": "OLMo 3 (7B)",
+    "repo": "allenai/Olmo-3-1025-7B",
+    "configUrl": "https://huggingface.co/allenai/Olmo-3-1025-7B/blob/a81bae42db3975be1671e27b9c9a56da1a9f980f/config.json",
+    "sourceNote": null,
+    "kind": "olmo3",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 32,
+    "mix": {
+      "attention": 32
+    },
+    "notes": []
+  },
+  {
+    "id": "deepseek-v3-2",
+    "name": "DeepSeek V3.2 (671B)",
+    "repo": "deepseek-ai/DeepSeek-V3.2",
+    "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/a7e62ac04ecb2c0a54d736dc46601c5606cf10a6/config.json",
+    "sourceNote": null,
+    "kind": "deepseek_v32",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 61,
+    "mix": {
+      "dsa": 61
+    },
+    "notes": []
+  },
+  {
+    "id": "mistral-large-3",
+    "name": "Mistral Large 3 (673B)",
+    "repo": "mistralai/Mistral-Large-3-675B-Instruct-2512",
+    "configUrl": "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512/blob/383ffea2c7d60dfd44ca960e8e691709d4fdb9cd/params.json",
+    "sourceNote": "official native params.json",
+    "kind": "mistral_native",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 61,
+    "mix": {
+      "mla": 61
+    },
+    "notes": []
+  },
+  {
+    "id": "nemotron-3-nano-30b-a3b",
+    "name": "Nemotron 3 Nano (30B-A3B)",
+    "repo": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/blob/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/config.json",
+    "sourceNote": null,
+    "kind": "nemotron_h",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 52,
+    "mix": {
+      "mamba": 23,
+      "ffn": 23,
+      "attention": 6
+    },
+    "notes": []
+  },
+  {
+    "id": "xiaomi-mimo-v2-flash-309b",
+    "name": "Xiaomi MiMo-V2-Flash (309B)",
+    "repo": "XiaomiMiMo/MiMo-V2-Flash",
+    "configUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash/blob/1afd314a2406c282e0956375c34a676501c78649/config.json",
+    "sourceNote": null,
+    "kind": "mimo_v2_flash",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 48,
+    "mix": {
+      "attention": 48
+    },
+    "notes": []
+  },
+  {
+    "id": "glm-4-7-355b",
+    "name": "GLM-4.7 (355B)",
+    "repo": "zai-org/GLM-4.7",
+    "configUrl": "https://huggingface.co/zai-org/GLM-4.7/blob/602d01efcdd332c5238ca4bcede555defbe83eb7/config.json",
+    "sourceNote": null,
+    "kind": "glm4_moe",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 92,
+    "mix": {
+      "attention": 92
+    },
+    "notes": []
+  },
+  {
+    "id": "arcee-ai-trinity-large-400b",
+    "name": "Arcee AI Trinity Large (400B)",
+    "repo": "arcee-ai/Trinity-Large-Base",
+    "configUrl": "https://huggingface.co/arcee-ai/Trinity-Large-Base/blob/b2a665b40e5d67b05fb164205cf63155f7958e2a/config.json",
+    "sourceNote": null,
+    "kind": "afmoe",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 60,
+    "mix": {
+      "attention": 60
+    },
+    "notes": []
+  },
+  {
+    "id": "glm-5-744b",
+    "name": "GLM-5 (744B)",
+    "repo": "zai-org/GLM-5",
+    "configUrl": "https://huggingface.co/zai-org/GLM-5/blob/c183ef8c61faee82855eca1ed9bb3a9a7ce3b0b2/config.json",
+    "sourceNote": null,
+    "kind": "glm_moe_dsa",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 78,
+    "mix": {
+      "dsa": 78
+    },
+    "notes": []
+  },
+  {
+    "id": "nemotron-3-super-120b-a12b",
+    "name": "Nemotron 3 Super (120B-A12B)",
+    "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/blob/2dc98e2afe4face0e4ce40972a915c45368bd34a/config.json",
+    "sourceNote": null,
+    "kind": "nemotron_h",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 88,
+    "mix": {
+      "mamba": 40,
+      "ffn": 40,
+      "attention": 8
+    },
+    "notes": []
+  },
+  {
+    "id": "gemma-4-31b",
+    "name": "Gemma 4 (31B)",
+    "repo": "google/gemma-4-31B-it",
+    "configUrl": "https://huggingface.co/google/gemma-4-31B-it/blob/842da3794eaa0b77d5f08bae87a17459d91ff475/config.json",
+    "sourceNote": null,
+    "kind": "gemma4_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 60,
+    "mix": {
+      "attention": 60
+    },
+    "notes": []
+  },
+  {
+    "id": "gemma-4-26b-a4b",
+    "name": "Gemma 4 (26B-A4B)",
+    "repo": "google/gemma-4-26B-A4B-it",
+    "configUrl": "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/config.json",
+    "sourceNote": null,
+    "kind": "gemma4_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 30,
+    "mix": {
+      "attention": 30
+    },
+    "notes": []
+  },
+  {
+    "id": "gemma-4-12b",
+    "name": "Gemma 4 (12B)",
+    "repo": "google/gemma-4-12B-it",
+    "configUrl": "https://huggingface.co/google/gemma-4-12B-it/blob/707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7/config.json",
+    "sourceNote": null,
+    "kind": "gemma4_unified_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 48,
+    "mix": {
+      "attention": 48
+    },
+    "notes": []
+  },
+  {
+    "id": "llama-3-2-3b",
+    "name": "Llama 3.2 (3B)",
+    "repo": "unsloth/Llama-3.2-3B-Instruct",
+    "configUrl": "https://huggingface.co/unsloth/Llama-3.2-3B-Instruct/blob/006f5dcd1393c3add266de40994ba96225e9689d/config.json",
+    "sourceNote": "public mirror of Llama 3.2 3B",
+    "kind": "llama",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 28,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "qwen3-coder-flash-30b-a3b",
+    "name": "Qwen3 Coder Flash (30B-A3B)",
+    "repo": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/b2cff646eb4bb1d68355c01b18ae02e7cf42d120/config.json",
+    "sourceNote": null,
+    "kind": "qwen3_moe",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 48,
+    "mix": {
+      "attention": 48
+    },
+    "notes": []
+  },
+  {
+    "id": "kimi-k2-5",
+    "name": "Kimi K2.5 (1T)",
+    "repo": "moonshotai/Kimi-K2.5",
+    "configUrl": "https://huggingface.co/moonshotai/Kimi-K2.5/blob/4d01dfe0332d63057c186e0b262165819efb6611/config.json",
+    "sourceNote": null,
+    "kind": "kimi_k2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 61,
+    "mix": {
+      "mla": 61
+    },
+    "notes": []
+  },
+  {
+    "id": "step-3-5-flash-196b",
+    "name": "Step 3.5 Flash (196B)",
+    "repo": "stepfun-ai/Step-3.5-Flash",
+    "configUrl": "https://huggingface.co/stepfun-ai/Step-3.5-Flash/blob/ab446a3de5e171ea341227e24bb1f090e1b771f7/config.json",
+    "sourceNote": null,
+    "kind": "step3p5",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 45,
+    "mix": {
+      "attention": 45
+    },
+    "notes": [
+      "layer_types 的额外 3 项属于辅助层；主干只使用 num_hidden_layers=45 项。"
+    ]
+  },
+  {
+    "id": "nanbeige-4-1-3b",
+    "name": "Nanbeige 4.1 (3B)",
+    "repo": "Nanbeige/Nanbeige4.1-3B",
+    "configUrl": "https://huggingface.co/Nanbeige/Nanbeige4.1-3B/blob/9c4555c37921c0982af8fffeee1e0a6e6b953c4f/config.json",
+    "sourceNote": null,
+    "kind": "llama",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 32,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "minimax-m2-5-230b",
+    "name": "MiniMax-M2.5 (230B)",
+    "repo": "MiniMaxAI/MiniMax-M2.5",
+    "configUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5/blob/f710177d938eff80b684d42c5aa84b382612f21f/config.json",
+    "sourceNote": null,
+    "kind": "minimax_m2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 62,
+    "mix": {
+      "attention": 62
+    },
+    "notes": []
+  },
+  {
+    "id": "tiny-aya-3-35b",
+    "name": "Tiny Aya (3.35B)",
+    "repo": "CohereLabs/tiny-aya-base",
+    "configUrl": "https://huggingface.co/DevQuasar/CohereLabs.tiny-aya-base-GGUF/blob/7c8c35ade9cbdba2ddbfe9509583d34af36a048d/CohereLabs.tiny-aya-base.Q2_K.gguf",
+    "sourceNote": "转换配置：公开 GGUF 元数据 + 官方模型卡。非原始 HF config；未确定字段不视为精确实现。",
+    "kind": "cohere2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 36,
+    "mix": {
+      "attention": 36
+    },
+    "notes": []
+  },
+  {
+    "id": "ling-2-5-1t",
+    "name": "Ling 2.5 (1T)",
+    "repo": "inclusionAI/Ling-2.5-1T",
+    "configUrl": "https://huggingface.co/inclusionAI/Ling-2.5-1T/blob/9c9d569b9183743eadee7f5ff13c15526fd0c751/config.json",
+    "sourceNote": null,
+    "kind": "bailing_hybrid",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 80,
+    "mix": {
+      "lightning": 70,
+      "mla": 10
+    },
+    "notes": []
+  },
+  {
+    "id": "qwen3-5-397b",
+    "name": "Qwen3.5 (397B)",
+    "repo": "Qwen/Qwen3.5-397B-A17B",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/blob/8472618112abcbd45acbcdc58436aff4233c23f7/config.json",
+    "sourceNote": null,
+    "kind": "qwen3_5_moe_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 60,
+    "mix": {
+      "delta": 45,
+      "attention": 15
+    },
+    "notes": []
+  },
+  {
+    "id": "sarvam-30b",
+    "name": "Sarvam (30B)",
+    "repo": "sarvamai/sarvam-30b",
+    "configUrl": "https://huggingface.co/sarvamai/sarvam-30b/blob/071ae95e933605ca1104a6b4524a36a98488efa4/config.json",
+    "sourceNote": null,
+    "kind": "sarvam_moe",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 19,
+    "mix": {
+      "attention": 19
+    },
+    "notes": []
+  },
+  {
+    "id": "sarvam-105b",
+    "name": "Sarvam (105B)",
+    "repo": "sarvamai/sarvam-105b",
+    "configUrl": "https://huggingface.co/sarvamai/sarvam-105b/blob/abe264bdb8fb2244daadaa59ebc2020b3c139e89/config.json",
+    "sourceNote": null,
+    "kind": "sarvam_mla",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 32,
+    "mix": {
+      "mla": 32
+    },
+    "notes": []
+  },
+  {
+    "id": "phi-4",
+    "name": "Phi-4 (14B)",
+    "repo": "microsoft/phi-4",
+    "configUrl": "https://huggingface.co/microsoft/phi-4/blob/2db69c1c3e91a05d2c64a3185acfbaf36f744e25/config.json",
+    "sourceNote": null,
+    "kind": "phi3",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 40,
+    "mix": {
+      "attention": 40
+    },
+    "notes": []
+  },
+  {
+    "id": "xlstm-7b",
+    "name": "xLSTM (7B)",
+    "repo": "NX-AI/xLSTM-7b",
+    "configUrl": "https://huggingface.co/NX-AI/xLSTM-7b/blob/9dc507bd0939cf372a4a4f667335651d8e49dddb/config.json",
+    "sourceNote": null,
+    "kind": "xlstm",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 32,
+    "mix": {
+      "mlstm": 32
+    },
+    "notes": []
+  },
+  {
+    "id": "glm-4-5-air",
+    "name": "GLM-4.5-Air (106B)",
+    "repo": "zai-org/GLM-4.5-Air",
+    "configUrl": "https://huggingface.co/zai-org/GLM-4.5-Air/blob/a24ceef6ce4f3536971efe9b778bdaa1bab18daa/config.json",
+    "sourceNote": null,
+    "kind": "glm4_moe",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 46,
+    "mix": {
+      "attention": 46
+    },
+    "notes": []
+  },
+  {
+    "id": "ouro-thinking-2-6b",
+    "name": "Ouro-Thinking (2.6B)",
+    "repo": "ByteDance/Ouro-2.6B-Thinking",
+    "configUrl": "https://huggingface.co/ByteDance/Ouro-2.6B-Thinking/blob/f1edd81e7ac41355db670500ceaf204e0f73af68/config.json",
+    "sourceNote": null,
+    "kind": "ouro",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 48,
+    "mix": {
+      "attention": 48
+    },
+    "notes": []
+  },
+  {
+    "id": "intellect-3",
+    "name": "INTELLECT-3 (106B)",
+    "repo": "PrimeIntellect/INTELLECT-3",
+    "configUrl": "https://huggingface.co/PrimeIntellect/INTELLECT-3/blob/ff39d4a4688989f3f28868923d030c28e1b7d81c/config.json",
+    "sourceNote": null,
+    "kind": "glm4_moe",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 46,
+    "mix": {
+      "attention": 46
+    },
+    "notes": [
+      "配置默认 use_cache=false。缓存页仅展示开启推理缓存时的理论状态，不宣称此配置默认会分配。"
+    ]
+  },
+  {
+    "id": "longcat-flash-lite-68-5b-a3b",
+    "name": "LongCat-Flash-Lite (68.5B-A3B)",
+    "repo": "meituan-longcat/LongCat-Flash-Lite",
+    "configUrl": "https://huggingface.co/meituan-longcat/LongCat-Flash-Lite/blob/b62b68827ead0b7fef3ba98b57f18484acaaec06/config.json",
+    "sourceNote": null,
+    "kind": "longcat_flash",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 14,
+    "mix": {
+      "mla": 14
+    },
+    "notes": [
+      "包含 N-gram / Engram 条件记忆；表布局与哈希索引在独立辅助模块中列出，不计入部分主干权重。",
+      "原始 config num_layers=14，每块有两次 MLA、两次 dense MLP 与快捷 MoE。采用官方代码的块语义，不沿用画廊标题的层数。"
+    ]
+  },
+  {
+    "id": "mistral-small-4",
+    "name": "Mistral Small 4 (119B)",
+    "repo": "mistralai/Mistral-Small-4-119B-2603",
+    "configUrl": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603/blob/a11f36bebf709121056b1dbcc943d1c6afbe494d/config.json",
+    "sourceNote": null,
+    "kind": "mistral4",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 36,
+    "mix": {
+      "mla": 36
+    },
+    "notes": []
+  },
+  {
+    "id": "nemotron-3-nano-4b",
+    "name": "Nemotron 3 Nano (4B)",
+    "repo": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/config.json",
+    "sourceNote": null,
+    "kind": "nemotron_h",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 42,
+    "mix": {
+      "mamba": 21,
+      "ffn": 17,
+      "attention": 4
+    },
+    "notes": []
+  },
+  {
+    "id": "minimax-m2-7-230b",
+    "name": "MiniMax M2.7 (230B)",
+    "repo": "MiniMaxAI/MiniMax-M2.7",
+    "configUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7/blob/d494266a4affc0d2995ba1fa35c8481cbd84294b/config.json",
+    "sourceNote": null,
+    "kind": "minimax_m2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 62,
+    "mix": {
+      "attention": 62
+    },
+    "notes": []
+  },
+  {
+    "id": "gemma-4-e2b",
+    "name": "Gemma 4 (E2B)",
+    "repo": "google/gemma-4-E2B-it",
+    "configUrl": "https://huggingface.co/google/gemma-4-E2B-it/blob/3e22461f65e89153144f8adb70e3b8c2cc9845a7/config.json",
+    "sourceNote": null,
+    "kind": "gemma4",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 35,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "gemma-4-e4b",
+    "name": "Gemma 4 (E4B)",
+    "repo": "google/gemma-4-E4B-it",
+    "configUrl": "https://huggingface.co/google/gemma-4-E4B-it/blob/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json",
+    "sourceNote": null,
+    "kind": "gemma4",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 42,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "deepseek-v4-flash",
+    "name": "DeepSeek V4-Flash (284B)",
+    "repo": "deepseek-ai/DeepSeek-V4-Flash",
+    "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/blob/60d8d70770c6776ff598c94bb586a859a38244f1/config.json",
+    "sourceNote": null,
+    "kind": "deepseek_v4",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 43,
+    "mix": {
+      "csa": 43
+    },
+    "notes": [
+      "Hyper-Connections 残差轴 HC=4；混合子算子保留结构说明，不套用普通 residual add。"
+    ]
+  },
+  {
+    "id": "deepseek-v4-pro",
+    "name": "DeepSeek V4-Pro (1.6T)",
+    "repo": "deepseek-ai/DeepSeek-V4-Pro",
+    "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/b5968e9190ef611bbf34a7229255be88a0e937c1/config.json",
+    "sourceNote": null,
+    "kind": "deepseek_v4",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 61,
+    "mix": {
+      "csa": 61
+    },
+    "notes": [
+      "Hyper-Connections 残差轴 HC=4；混合子算子保留结构说明，不套用普通 residual add。"
+    ]
+  },
+  {
+    "id": "laguna-xs-2",
+    "name": "Laguna XS.2 (33B)",
+    "repo": "poolside/Laguna-XS.2",
+    "configUrl": "https://huggingface.co/poolside/Laguna-XS.2/blob/a397bde04501591d0ac3d74a5d9d0a4ec298ffb8/config.json",
+    "sourceNote": null,
+    "kind": "laguna",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 40,
+    "mix": {
+      "attention": 40
+    },
+    "notes": []
+  },
+  {
+    "id": "zaya1-8b",
+    "name": "ZAYA1-8B (8.4B)",
+    "repo": "Zyphra/ZAYA1-8B",
+    "configUrl": "https://huggingface.co/Zyphra/ZAYA1-8B/blob/67d34da515b30409ee8daa67c3605c4402d03f6f/config.json",
+    "sourceNote": null,
+    "kind": "zaya",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 40,
+    "mix": {
+      "cca": 40
+    },
+    "notes": []
+  },
+  {
+    "id": "glm-5-1",
+    "name": "GLM-5.1 (744B)",
+    "repo": "zai-org/GLM-5.1",
+    "configUrl": "https://huggingface.co/zai-org/GLM-5.1/blob/26e1bd6e011feb778d25ae34b09b07074139d92d/config.json",
+    "sourceNote": null,
+    "kind": "glm_moe_dsa",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 78,
+    "mix": {
+      "dsa": 78
+    },
+    "notes": []
+  },
+  {
+    "id": "qwen3-6-35b-a3b",
+    "name": "Qwen3.6 (35B-A3B)",
+    "repo": "Qwen/Qwen3.6-35B-A3B",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/995ad96eacd98c81ed38be0c5b274b04031597b0/config.json",
+    "sourceNote": null,
+    "kind": "qwen3_5_moe_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 40,
+    "mix": {
+      "delta": 30,
+      "attention": 10
+    },
+    "notes": []
+  },
+  {
+    "id": "kimi-k2-6",
+    "name": "Kimi K2.6 (1T)",
+    "repo": "moonshotai/Kimi-K2.6",
+    "configUrl": "https://huggingface.co/moonshotai/Kimi-K2.6/blob/7eb5002f6aadc958aed6a9177b7ed26bb94011bb/config.json",
+    "sourceNote": null,
+    "kind": "kimi_k2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 61,
+    "mix": {
+      "mla": 61
+    },
+    "notes": []
+  },
+  {
+    "id": "qwen3-6-27b",
+    "name": "Qwen3.6 (27B)",
+    "repo": "Qwen/Qwen3.6-27B",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3.6-27B/blob/6a9e13bd6fc8f0983b9b99948120bc37f49c13e9/config.json",
+    "sourceNote": null,
+    "kind": "qwen3_5_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 64,
+    "mix": {
+      "delta": 48,
+      "attention": 16
+    },
+    "notes": []
+  },
+  {
+    "id": "xiaomi-mimo-v2-5-310b",
+    "name": "Xiaomi MiMo-V2.5 (310B)",
+    "repo": "XiaomiMiMo/MiMo-V2.5",
+    "configUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5/blob/63651580ca774f8504f676040460aed3e1244ac1/config.json",
+    "sourceNote": null,
+    "kind": "mimo_v2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 48,
+    "mix": {
+      "attention": 48
+    },
+    "notes": []
+  },
+  {
+    "id": "xiaomi-mimo-v2-5-pro-1-02t",
+    "name": "Xiaomi MiMo-V2.5-Pro (1.02T)",
+    "repo": "XiaomiMiMo/MiMo-V2.5-Pro",
+    "configUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro/blob/21d1ecfecd7bd70f31be25ca49d7edd21f003659/config.json",
+    "sourceNote": null,
+    "kind": "mimo_v2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 70,
+    "mix": {
+      "attention": 70
+    },
+    "notes": []
+  },
+  {
+    "id": "ling-2-6-1t",
+    "name": "Ling 2.6 (1T)",
+    "repo": "inclusionAI/Ling-2.6-1T",
+    "configUrl": "https://huggingface.co/inclusionAI/Ling-2.6-1T/blob/653026b0ba07b69ff81e03ef2e44eddd8b493cf5/config.json",
+    "sourceNote": null,
+    "kind": "bailing_hybrid",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 80,
+    "mix": {
+      "lightning": 70,
+      "mla": 10
+    },
+    "notes": []
+  },
+  {
+    "id": "tencent-hy3-preview-295b-a21b",
+    "name": "Tencent Hy3-preview (295B-A21B)",
+    "repo": "tencent/Hy3-preview",
+    "configUrl": "https://huggingface.co/tencent/Hy3-preview/blob/549c2b3a0fd5b9a6c6059a9935bf0d59ab69d75a/config.json",
+    "sourceNote": null,
+    "kind": "hy_v3",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 80,
+    "mix": {
+      "attention": 80
+    },
+    "notes": []
+  },
+  {
+    "id": "granite-4-1-30b",
+    "name": "Granite 4.1 (30B)",
+    "repo": "ibm-granite/granite-4.1-30b",
+    "configUrl": "https://huggingface.co/ibm-granite/granite-4.1-30b/blob/4fae6278f7132abf5e971f9de49ebbad09c54cce/config.json",
+    "sourceNote": null,
+    "kind": "granite",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 64,
+    "mix": {
+      "attention": 64
+    },
+    "notes": []
+  },
+  {
+    "id": "command-a-218b-a25b",
+    "name": "Command A+ (218B-A25B)",
+    "repo": "CohereLabs/command-a-plus-05-2026-w4a4",
+    "configUrl": "https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4/blob/ebd2d72c0f9a84389c6b057136d38c435aea2700/config.json",
+    "sourceNote": null,
+    "kind": "cohere2_moe",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 32,
+    "mix": {
+      "attention": 32
+    },
+    "notes": []
+  },
+  {
+    "id": "lfm2-5-1-2b",
+    "name": "LFM2.5 (1.2B)",
+    "repo": "LiquidAI/LFM2.5-1.2B-Thinking",
+    "configUrl": "https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking/blob/f313478934a7612d22991f752959d7a1a8756fec/config.json",
+    "sourceNote": null,
+    "kind": "lfm2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 16,
+    "mix": {
+      "conv": 10,
+      "attention": 6
+    },
+    "notes": []
+  },
+  {
+    "id": "lfm2-5-350m",
+    "name": "LFM2.5 (350M)",
+    "repo": "LiquidAI/LFM2.5-350M",
+    "configUrl": "https://huggingface.co/LiquidAI/LFM2.5-350M/blob/9e6c6ccf47cd318696e137d381a7ded8fe4df09f/config.json",
+    "sourceNote": null,
+    "kind": "lfm2",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 16,
+    "mix": {
+      "conv": 10,
+      "attention": 6
+    },
+    "notes": []
+  },
+  {
+    "id": "lfm2-5-8b-a1b",
+    "name": "LFM2.5 (8B-A1B)",
+    "repo": "LiquidAI/LFM2.5-8B-A1B",
+    "configUrl": "https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/5dd22602c2e9f6a097b1de4c4efe0658b605015c/config.json",
+    "sourceNote": null,
+    "kind": "lfm2_moe",
+    "scope": "language-backbone",
+    "parametersVerified": true,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 24,
+    "mix": {
+      "conv": 18,
+      "attention": 6
+    },
+    "notes": []
+  },
+  {
+    "id": "jetbrains-mellum2-thinking-12b-a2-5b",
+    "name": "JetBrains Mellum2 Thinking (12B-A2.5B)",
+    "repo": "JetBrains/Mellum2-12B-A2.5B-Thinking",
+    "configUrl": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking/blob/a7311550557e93cc706ab5dd3d879c1a11703ab4/config.json",
+    "sourceNote": null,
+    "kind": "mellum",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 28,
+    "mix": {
+      "attention": 28
+    },
+    "notes": []
+  },
+  {
+    "id": "nemotron-3-ultra-550b-a55b",
+    "name": "Nemotron 3 Ultra (550B-A55B)",
+    "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4",
+    "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4/blob/02462641f13d3af838b904f48195b9bb8a1e4ebc/config.json",
+    "sourceNote": null,
+    "kind": "nemotron_h",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 108,
+    "mix": {
+      "mamba": 48,
+      "ffn": 48,
+      "attention": 12
+    },
+    "notes": []
+  },
+  {
+    "id": "north-mini-code-30b-a3b",
+    "name": "North Mini Code (30B-A3B)",
+    "repo": "CohereLabs/North-Mini-Code-1.0",
+    "configUrl": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0/blob/d11e61a842617a22dc328552fa5bb86231ee4f37/config.json",
+    "sourceNote": null,
+    "kind": "cohere2_moe",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 49,
+    "mix": {
+      "attention": 49
+    },
+    "notes": []
+  },
+  {
+    "id": "kimi-k2-7-code",
+    "name": "Kimi K2.7 Code (1T)",
+    "repo": "moonshotai/Kimi-K2.7-Code",
+    "configUrl": "https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/74797c9c62378b951a1f6fcf5c4631024e9b8bef/config.json",
+    "sourceNote": null,
+    "kind": "kimi_k2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 61,
+    "mix": {
+      "mla": 61
+    },
+    "notes": []
+  },
+  {
+    "id": "minimax-m3-428b",
+    "name": "MiniMax M3 (428B)",
+    "repo": "MiniMaxAI/MiniMax-M3",
+    "configUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/f0e1c1e04d40177e4673a22097036854f536e9c0/config.json",
+    "sourceNote": null,
+    "kind": "minimax_m3_vl",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 60,
+    "mix": {
+      "attention": 3,
+      "dsa": 57
+    },
+    "notes": []
+  },
+  {
+    "id": "vibethinker-3b",
+    "name": "VibeThinker-3B (3B)",
+    "repo": "WeiboAI/VibeThinker-3B",
+    "configUrl": "https://huggingface.co/WeiboAI/VibeThinker-3B/blob/77bd2cced09193c8b9a59a32bd8577bbd1f3e01c/config.json",
+    "sourceNote": null,
+    "kind": "qwen2",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 36,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "glm-5-2",
+    "name": "GLM-5.2 (744B)",
+    "repo": "zai-org/GLM-5.2",
+    "configUrl": "https://huggingface.co/zai-org/GLM-5.2/blob/cf457fa734ab149ffef225f80893eb38c6ff5cdc/config.json",
+    "sourceNote": null,
+    "kind": "glm_moe_dsa",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 78,
+    "mix": {
+      "dsa": 78
+    },
+    "notes": []
+  },
+  {
+    "id": "laguna-xs-2-1",
+    "name": "Laguna XS 2.1 (33B)",
+    "repo": "poolside/Laguna-XS-2.1",
+    "configUrl": "https://huggingface.co/poolside/Laguna-XS-2.1/blob/c5f36269bbdbd3f27fddc9a9f9dbae0cf2cf57db/config.json",
+    "sourceNote": null,
+    "kind": "laguna",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 40,
+    "mix": {
+      "attention": 40
+    },
+    "notes": []
+  },
+  {
+    "id": "soofi-s-30b-a3b",
+    "name": "Soofi S (30B-A3B)",
+    "repo": "Soofi-Project/Soofi-S-Base",
+    "configUrl": "https://huggingface.co/Soofi-Project/Soofi-S-Base/blob/main/README.md",
+    "sourceNote": "架构派生：官方模型卡说明沿用 Nemotron 3 Nano；共享专家数按官方卡修正。非原始 Soofi config。",
+    "kind": "nemotron_h",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 52,
+    "mix": {
+      "mamba": 23,
+      "ffn": 23,
+      "attention": 6
+    },
+    "notes": []
+  },
+  {
+    "id": "inkling",
+    "name": "Inkling (975B)",
+    "repo": "thinkingmachines/Inkling",
+    "configUrl": "https://huggingface.co/thinkingmachines/Inkling/blob/828496eeae4c243ff1a22f7f28ff83694f2f7bc9/config.json",
+    "sourceNote": null,
+    "kind": "inkling_mm_model",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 66,
+    "mix": {
+      "attention": 66
+    },
+    "notes": []
+  },
+  {
+    "id": "btl-3-27b",
+    "name": "BTL-3 (27B)",
+    "repo": "badtheorylabs/BTL-3",
+    "configUrl": "https://huggingface.co/badtheorylabs/BTL-3/blob/f76b519995d69090b754f22b7f45d0d406076c42/adapter_config.json",
+    "sourceNote": "LoRA 派生：官方 adapter_config 声明基座 Qwen3.6-27B；展示基座结构，adapter 权重未计入。",
+    "kind": "qwen3_5_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 64,
+    "mix": {
+      "delta": 48,
+      "attention": 16
+    },
+    "notes": [
+      "LoRA 派生：主图使用其声明的基座配置；adapter 权重与训练结果不等于基座权重。"
+    ]
+  },
+  {
+    "id": "antares-1b",
+    "name": "Antares (1B)",
+    "repo": "dpoled/antares-1b-mlx-8bit",
+    "configUrl": "https://huggingface.co/dpoled/antares-1b-mlx-8bit/blob/0c20d04e51ff4a54bb43c57efc30a115f9066f85/config.json",
+    "sourceNote": "public mirror; weights are not downloaded",
+    "kind": "granitemoehybrid",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 40,
+    "mix": {
+      "attention": 40
+    },
+    "notes": [
+      "配置默认 use_cache=false。缓存页仅展示开启推理缓存时的理论状态，不宣称此配置默认会分配。"
+    ]
+  },
+  {
+    "id": "laguna-s-2-1",
+    "name": "Laguna S 2.1 (118B)",
+    "repo": "poolside/Laguna-S-2.1",
+    "configUrl": "https://huggingface.co/poolside/Laguna-S-2.1/blob/0f573140834b11cfac0c2af97a101a7a69a13e22/config.json",
+    "sourceNote": null,
+    "kind": "laguna",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 48,
+    "mix": {
+      "attention": 48
+    },
+    "notes": []
+  },
+  {
+    "id": "motif-3-beta",
+    "name": "Motif 3 Beta (314B)",
+    "repo": "Motif-Technologies/Motif-3-Beta",
+    "configUrl": "https://huggingface.co/Motif-Technologies/Motif-3-Beta/blob/ad36ceadd3cadb3629e5d91da4ee85c1650f37ac/config.json",
+    "sourceNote": null,
+    "kind": "Motif",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 53,
+    "mix": {
+      "gdla": 53
+    },
+    "notes": [
+      "Hyper-Connections 残差轴 HC=4；混合子算子保留结构说明，不套用普通 residual add。"
+    ]
+  },
+  {
+    "id": "nanbeige-4-2-3b",
+    "name": "Nanbeige 4.2 (3B)",
+    "repo": "Nanbeige/Nanbeige4.2-3B",
+    "configUrl": "https://huggingface.co/Nanbeige/Nanbeige4.2-3B/blob/b82e54bd609793562a75cbf9337970a93369eab5/config.json",
+    "sourceNote": null,
+    "kind": "nanbeige",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 22,
+    "mix": {
+      "attention": 22
+    },
+    "notes": []
+  },
+  {
+    "id": "solar-open-2",
+    "name": "Solar Open 2 (250B)",
+    "repo": "upstage/Solar-Open2-250B",
+    "configUrl": "https://huggingface.co/upstage/Solar-Open2-250B/blob/9190fbe63a2ad8e17fc766ccceb36de7c66f004b/config.json",
+    "sourceNote": null,
+    "kind": "solar_open2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 48,
+    "mix": {
+      "attention": 12,
+      "kda": 36
+    },
+    "notes": []
+  },
+  {
+    "id": "kimi-k3",
+    "name": "Kimi K3 (2.8T)",
+    "repo": "moonshotai/Kimi-K3",
+    "configUrl": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/config.json",
+    "sourceNote": null,
+    "kind": "kimi_linear",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 93,
+    "mix": {
+      "kda": 69,
+      "mla": 24
+    },
+    "notes": [
+      "Attention Residual 分块 12；残差权重需运行时计算。"
+    ]
+  },
+  {
+    "id": "ling-3-0-flash",
+    "name": "Ling 3.0 Flash (124B)",
+    "repo": "inclusionAI/Ling-3.0-flash",
+    "configUrl": "https://huggingface.co/inclusionAI/Ling-3.0-flash/blob/fcc60a52b34c69c6271d0ac8a8cb0815020b6a43/config.json",
+    "sourceNote": null,
+    "kind": "bailing_hybrid",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 42,
+    "mix": {
+      "kda": 35,
+      "mla": 7
+    },
+    "notes": []
+  },
+  {
+    "id": "muse-glimmer-30b",
+    "name": "Muse Glimmer (30B)",
+    "repo": "meta-models/Muse-Glimmer-30B",
+    "configUrl": "https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/a4e59da52a7bc87ae7251dd5545c0dd437c44b68/config.json",
+    "sourceNote": null,
+    "kind": "muse_glimmer_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 52,
+    "mix": {
+      "attention": 52
+    },
+    "notes": []
+  },
+  {
+    "id": "nemotron-3-5-lightning-30b-a3b",
+    "name": "Nemotron 3.5 Lightning (30B-A3B)",
+    "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4/blob/bee7596271d1495f6992ae224aefde4410e816b8/config.json",
+    "sourceNote": null,
+    "kind": "nemotron_h",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 52,
+    "mix": {
+      "mamba": 23,
+      "ffn": 23,
+      "attention": 6
+    },
+    "notes": []
+  },
+  {
+    "id": "qwen3-8-27b",
+    "name": "Qwen3.8 (27B)",
+    "repo": "Qwen/Qwen3.8-27B",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/config.json",
+    "sourceNote": null,
+    "kind": "qwen3_5_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 64,
+    "mix": {
+      "delta": 48,
+      "attention": 16
+    },
+    "notes": []
+  },
+  {
+    "id": "ornith-1-5-35b-a3b",
+    "name": "Ornith 1.5 (35B-A3B)",
+    "repo": "ornith-ai/Ornith-1.5-35B-A3B",
+    "configUrl": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/10fbf86fed7ecee4a061f8b499a618f46001cac1/config.json",
+    "sourceNote": null,
+    "kind": "qwen3_5_moe_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 40,
+    "mix": {
+      "delta": 30,
+      "attention": 10
+    },
+    "notes": [
+      "配置默认 use_cache=false。缓存页仅展示开启推理缓存时的理论状态，不宣称此配置默认会分配。"
+    ]
+  },
+  {
+    "id": "glm-5-3-flash",
+    "name": "GLM-5.3-Flash (320B)",
+    "repo": "zai-org/GLM-5.3-Flash",
+    "configUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash/blob/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/config.json",
+    "sourceNote": null,
+    "kind": "glm5_next_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 45,
+    "mix": {
+      "delta": 34,
+      "dsa": 11
+    },
+    "notes": [
+      "Hyper-Connections 残差轴 HC=4；混合子算子保留结构说明，不套用普通 residual add。"
+    ]
+  },
+  {
+    "id": "qwen3-8-flash-next-125b-a6b",
+    "name": "Qwen3.8-Flash-Next (125B-A6B)",
+    "repo": "Qwen/Qwen3.8-Flash-Next",
+    "configUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/de4b8e4d43b917e7706784d8bb445c9af86a3540/config.json",
+    "sourceNote": null,
+    "kind": "qwen4_exp_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 48,
+    "mix": {
+      "delta": 36,
+      "dsa": 12
+    },
+    "notes": [
+      "Hyper-Connections 残差轴 HC=4；混合子算子保留结构说明，不套用普通 residual add。",
+      "包含 N-gram / Engram 条件记忆；表布局与哈希索引在独立辅助模块中列出，不计入部分主干权重。"
+    ]
+  },
+  {
+    "id": "tencent-hy4-preview-770b-a49b",
+    "name": "Tencent Hy4-preview (770B-A49B)",
+    "repo": "tencent/Hy4-preview",
+    "configUrl": "https://huggingface.co/tencent/Hy4-preview/blob/705d81ee51566a186d645b74c974d642ef2828fe/config.json",
+    "sourceNote": null,
+    "kind": "hy_v4",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 78,
+    "mix": {
+      "dsa": 78
+    },
+    "notes": [
+      "Hyper-Connections 残差轴 HC=4；混合子算子保留结构说明，不套用普通 residual add。"
+    ]
+  },
+  {
+    "id": "deepseek-v4-1-flash",
+    "name": "DeepSeek V4.1-Flash (552B)",
+    "repo": "deepseek-ai/DeepSeek-V4.1-Flash",
+    "configUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/314113f8a7dadb388215396ba5fbee2c610a04d6/config.json",
+    "sourceNote": null,
+    "kind": "deepseek_v41",
+    "scope": "specialized",
+    "parametersVerified": false,
+    "partialParameters": false,
+    "partialCache": false,
+    "blocks": 40,
+    "mix": null,
+    "notes": []
+  },
+  {
+    "id": "step-5-preview-600b",
+    "name": "Step-5 Preview (600B)",
+    "repo": "stepfun-ai/Step-5-Preview",
+    "configUrl": "https://huggingface.co/stepfun-ai/Step-5-Preview/blob/364b3b03fed2477aa0953fe855a2c4c8c48ee3cc/config.json",
+    "sourceNote": null,
+    "kind": "step5",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 92,
+    "mix": {
+      "attention": 69,
+      "dsa": 23
+    },
+    "notes": [
+      "layer_types 的额外 3 项属于辅助层；主干只使用 num_hidden_layers=92 项。"
+    ]
+  },
+  {
+    "id": "xiaomi-mimo-v2-6-flash-rl-309b",
+    "name": "Xiaomi MiMo-V2.6-Flash-RL (309B)",
+    "repo": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "configUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/dcd3fd83fb181622fbc606fbb1709901982a62c2/config.json",
+    "sourceNote": null,
+    "kind": "mimo_v2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 48,
+    "mix": {
+      "attention": 48
+    },
+    "notes": []
+  },
+  {
+    "id": "xiaomi-mimo-v2-6-pro-rl-1-02t",
+    "name": "Xiaomi MiMo-V2.6-Pro-RL (1.02T)",
+    "repo": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+    "configUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/b61f21852680ee02a29e946e18cf8697f4844061/config.json",
+    "sourceNote": null,
+    "kind": "mimo_v2",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 70,
+    "mix": {
+      "attention": 70
+    },
+    "notes": []
+  },
+  {
+    "id": "ember-1",
+    "name": "Ember-1 (2.8T)",
+    "repo": "moonshotai/Kimi-K3",
+    "configUrl": "https://huggingface.co/moonshotai/Kimi-K3/blob/f831ab66814297da540d832a5235f8e904f29d06/config.json",
+    "sourceNote": "基座架构：官方说明基于 Kimi K3；当前使用 Kimi K3 配置，不含派生模型未公开的变化。",
+    "kind": "kimi_linear",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 93,
+    "mix": {
+      "kda": 69,
+      "mla": 24
+    },
+    "notes": [
+      "Attention Residual 分块 12；残差权重需运行时计算。"
+    ]
+  },
+  {
+    "id": "naive-n0-5-flash-309b",
+    "name": "Naive-N0.5-Flash (309B)",
+    "repo": "NaiveAI/Naive-N0.5-Flash",
+    "configUrl": "https://huggingface.co/NaiveAI/Naive-N0.5-Flash/blob/9c9a11e8d2a6b8507d48b533345ef591cf9a6494/config.json",
+    "sourceNote": null,
+    "kind": "naive_n05_flash",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 48,
+    "mix": {
+      "attention": 48
+    },
+    "notes": []
+  },
+  {
+    "id": "kolibri-1-78b",
+    "name": "Kolibri-1 (78B)",
+    "repo": "Aleph-Alpha/Kolibri-1",
+    "configUrl": "https://huggingface.co/Aleph-Alpha/Kolibri-1/blob/452723312f300bf9542cd425f9d39bf832c2af40/config.json",
+    "sourceNote": null,
+    "kind": "kolibri1",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": false,
+    "blocks": 50,
+    "mix": {
+      "attention": 50
+    },
+    "notes": []
+  },
+  {
+    "id": "muse-spark-open-816b-a42b",
+    "name": "Muse Spark Open (816B-A42B)",
+    "repo": "unsloth/Muse-Spark-Open-816B-A42B",
+    "configUrl": "https://huggingface.co/unsloth/Muse-Spark-Open-816B-A42B/blob/49cade7b0c6ed297f0434229ac67eea5f9ae1220/config.json",
+    "sourceNote": "public mirror; weights are not downloaded",
+    "kind": "muse_spark_text",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 62,
+    "mix": {
+      "attention": 62
+    },
+    "notes": []
+  },
+  {
+    "id": "nemotron-3-5-super-vl-120b-a12b",
+    "name": "Nemotron 3.5 Super VL (120B-A12B)",
+    "repo": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+    "configUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4/blob/59b8721646c38111a242da18218859fb2b454322/config.json",
+    "sourceNote": null,
+    "kind": "nemotron_h",
+    "scope": "language-backbone",
+    "parametersVerified": false,
+    "partialParameters": true,
+    "partialCache": true,
+    "blocks": 88,
+    "mix": {
+      "mamba": 40,
+      "ffn": 40,
+      "attention": 8
+    },
+    "notes": []
+  }
+]
